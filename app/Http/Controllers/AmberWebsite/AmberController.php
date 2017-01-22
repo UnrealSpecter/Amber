@@ -51,19 +51,13 @@ class AmberController extends Controller
         $fotoblog = new Fotoblog();
         $fotoblog->title = $request->title;
         $fotoblog->description = $request->description;
+        // check if there is an image uploaded, move it to the uploads folder and save the name.
         $image = $request->file('image');
         if($image->move(public_path("/uploads"), $image->getClientOriginalname())){
-            echo 'fuck yeah';
+            $fotoblog->image = $image->getClientOriginalname();
         }
-        // if(Input::hasFile('image')){
-        //     echo 'image';
-        //     $image = Input::file('image');
-        //     $image->move('uploads', $file->getClientOriginalname());
-        //     echo '<img src="uploads/' . $image->getClientOriginalname() . '"/>';
-        // }
-        die('lel');
         if($fotoblog->save()){
-            return $this->index();
+            return $this->fotoblog();
         }
     }
 

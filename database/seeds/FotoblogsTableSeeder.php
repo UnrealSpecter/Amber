@@ -11,17 +11,17 @@ class FotoblogsTableSeeder extends Seeder
      */
    public function run()
     {
-        DB::table('fotoblogs')->insert([
-            'title' => 'Foto 1',
-            'description' => 'Dit is foto 1',
-        ]);
-        DB::table('fotoblogs')->insert([
-            'title' => 'Foto 2',
-            'description' => 'Dit is foto 2',
-        ]);
-        DB::table('fotoblogs')->insert([
-            'title' => 'Foto 3',
-            'description' => 'Dit is foto 3',
-        ]);
+        // DB::table('fotoblogs')->insert([
+        //     'title' => 'Foto 1',
+        //     'description' => 'Dit is foto 1',
+        // ]);
+        // DB::table('fotoblogs')->insert([
+        //     'title' => 'Foto 2',
+        //     'description' => 'Dit is foto 2',
+        // ]);
+        // DB::table('fotoblogs')->insert([
+        //     'title' => 'Foto 3',
+        //     'description' => 'Dit is foto 3',
+        // ]);
     }
 }

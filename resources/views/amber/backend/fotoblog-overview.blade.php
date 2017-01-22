@@ -30,6 +30,7 @@
   @foreach ($fotoblogs as $fotoblog)
       <h1>{{$fotoblog->title}}</h1>
       <h2>{{$fotoblog->description}}</h2>
+      <img src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
       <h2>{{date('F d, Y', strtotime($fotoblog->created_at))}}</h2>
   @endforeach
 
