@@ -60,6 +60,11 @@ Route::group(['middleware' => 'auth'], function () {
 		'show'
 	]]);
 
+	Route::resource('/Amber/works', 'AmberWebsite\BackendControllers\WorkController', ['except' => [
+		'show'
+	]]);
+
+	Route::post('/Amber/works/{$ids}', 'BackendControllers\WorkController@destroy');
 });
 
 
