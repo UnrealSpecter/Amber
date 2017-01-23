@@ -15,17 +15,6 @@ Route::get('/', function () {
     return view('layout');
 });
 
-//base route for returning all champions that are added.
-Route::get('/all-in', 'AllInController@index');
-
-Route::get('/all-in/addChampion', 'AllInController@addChampion');
-
-Route::get('/all-in/{id}', 'AllInController@editChampion');
-
-Route::post('/all-in/edit', 'AllInController@saveChampion');
-
-Route::post('/all-in/save', 'AllInController@createChampion');
-
 //automatically made login routes
 Auth::routes();
 
@@ -45,7 +34,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	// base dashboard route
     Route::get('/Amber/dashboard', 'AmberWebsite\AmberController@dashboard');
-    
+
     //werken routes
     Route::get('/Amber/dashboard/werken', 'AmberWebsite\AmberController@werken');
 
@@ -56,9 +45,11 @@ Route::group(['middleware' => 'auth'], function () {
     // // Route::get('/Amber/dashboard/fotoblog-delete', 'AmberWebsite\AmberController@fotoblogCreate');
     // Route::post('/Amber/dashboard/fotoblog-save', 'AmberWebsite\AmberController@createFotoblog');
 
-	Route::resource('/Amber/dashboard/photos', 'AmberWebsite\BackendControllers\PhotoController', ['except' => [
+    Route::resource('/Amber/performances', 'BackendControllers\PerformanceController', ['except' => ['show']]);
+	Route::resource('/Amber/dashboard/photos', 'BackendControllers\PhotoController', ['except' => [
 		'show'
 	]]);
+
 
 	Route::resource('/Amber/works', 'AmberWebsite\BackendControllers\WorkController', ['except' => [
 		'show'
@@ -67,4 +58,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/Amber/works/{$ids}', 'BackendControllers\WorkController@destroy');
 });
 
-
+    Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
+    
+    Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
+});
