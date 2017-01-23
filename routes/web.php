@@ -43,19 +43,22 @@ Route::group(['prefix'=>'Amber','as'=>'Amber'], function(){
 /* Backend route groups for Amber's website */
 Route::group(['middleware' => 'auth'], function () {
 
-	//base dashboard route
+	// base dashboard route
     Route::get('/Amber/dashboard', 'AmberWebsite\AmberController@dashboard');
     
     //werken routes
     Route::get('/Amber/dashboard/werken', 'AmberWebsite\AmberController@werken');
 
-    //fotoblog routes
-    Route::get('/Amber/dashboard/fotoblog-overview', 'AmberWebsite\AmberController@fotoblog');
-    Route::get('/Amber/dashboard/fotoblog-create', 'AmberWebsite\AmberController@fotoblogCreate');
-    // Route::get('/Amber/dashboard/fotoblog-edit', 'AmberWebsite\AmberController@fotoblogCreate');
-    // Route::get('/Amber/dashboard/fotoblog-delete', 'AmberWebsite\AmberController@fotoblogCreate');
-    Route::post('/Amber/dashboard/fotoblog-save', 'AmberWebsite\AmberController@createFotoblog');
+    // //fotoblog routes
+    // Route::get('/Amber/dashboard/fotoblog-overview', 'AmberWebsite\AmberController@fotoblog');
+    // Route::get('/Amber/dashboard/fotoblog-create', 'AmberWebsite\AmberController@fotoblogCreate');
+    // // Route::get('/Amber/dashboard/fotoblog-edit', 'AmberWebsite\AmberController@fotoblogCreate');
+    // // Route::get('/Amber/dashboard/fotoblog-delete', 'AmberWebsite\AmberController@fotoblogCreate');
+    // Route::post('/Amber/dashboard/fotoblog-save', 'AmberWebsite\AmberController@createFotoblog');
 
+	Route::resource('/Amber/dashboard/photos', 'AmberWebsite\BackendControllers\PhotoController', ['except' => [
+		'show'
+	]]);
 
 });
 
