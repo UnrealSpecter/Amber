@@ -46,9 +46,11 @@ Route::group(['middleware' => 'auth'], function () {
     // Route::post('/Amber/dashboard/fotoblog-save', 'AmberWebsite\AmberController@createFotoblog');
 
     Route::resource('/Amber/performances', 'BackendControllers\PerformanceController', ['except' => ['show']]);
-	Route::resource('/Amber/dashboard/photos', 'AmberWebsite\BackendControllers\PhotoController', ['except' => [
+	Route::resource('/Amber/dashboard/photos', 'BackendControllers\PhotoController', ['except' => [
 		'show'
 	]]);
+    Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
+
 
     Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
 });

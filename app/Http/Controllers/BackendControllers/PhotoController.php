@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\AmberWebsite\BackendControllers;
+namespace App\Http\Controllers\BackendControllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
