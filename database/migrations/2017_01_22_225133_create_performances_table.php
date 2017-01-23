@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateChampionsTable extends Migration
+class CreatePerformancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateChampionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('champions', function (Blueprint $table) {
+        Schema::create('performances', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('description');
+            $table->string('mediaItem');
+            $table->date('performanceDate');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateChampionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('champions');
+        Schema::dropIfExists('performances');
     }
 }
