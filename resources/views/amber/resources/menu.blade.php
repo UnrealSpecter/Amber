@@ -16,7 +16,7 @@
         <li><a href="/werken">Werken</a></li>
         <li><a href="#">Theater</a></li>
         <li><a href="#">CV</a></li>
-        <li><a href="{{Request::url()}}/fotoblog-overview">Fotoblog</a></li>
+        <li><a href="{{Request::url()}}/photos">Fotoblog</a></li>
         <li><a href="#">Agendafragmenten</a></li>
         <li><a href="#">logout</a></li>
       </ul>
