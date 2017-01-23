@@ -49,4 +49,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('/Amber/dashboard/photos', 'AmberWebsite\BackendControllers\PhotoController', ['except' => [
 		'show'
 	]]);
+
+    Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
 });
