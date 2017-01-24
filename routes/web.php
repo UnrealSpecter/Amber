@@ -33,32 +33,25 @@ Route::group(['prefix'=>'Amber','as'=>'Amber'], function(){
 Route::group(['middleware' => 'auth'], function () {
 
 	// base dashboard route
-    Route::get('/Amber/dashboard', 'AmberWebsite\AmberController@dashboard');
-
-    //werken routes
-    Route::get('/Amber/dashboard/werken', 'AmberWebsite\AmberController@werken');
-
-    // //fotoblog routes
-    // Route::get('/Amber/dashboard/fotoblog-overview', 'AmberWebsite\AmberController@fotoblog');
-    // Route::get('/Amber/dashboard/fotoblog-create', 'AmberWebsite\AmberController@fotoblogCreate');
-    // // Route::get('/Amber/dashboard/fotoblog-edit', 'AmberWebsite\AmberController@fotoblogCreate');
-    // // Route::get('/Amber/dashboard/fotoblog-delete', 'AmberWebsite\AmberController@fotoblogCreate');
-    // Route::post('/Amber/dashboard/fotoblog-save', 'AmberWebsite\AmberController@createFotoblog');
-
+    Route::get('/Amber/dashboard', function () {
+    	return view('amber.backend.dashboard');
+	});
     Route::resource('/Amber/performances', 'BackendControllers\PerformanceController', ['except' => ['show']]);
-	Route::resource('/Amber/dashboard/photos', 'BackendControllers\PhotoController', ['except' => [
+	Route::resource('/Amber/photos', 'BackendControllers\PhotoController', ['except' => [
 		'show'
 	]]);
 
-
-	Route::resource('/Amber/works', 'AmberWebsite\BackendControllers\WorkController', ['except' => [
+	Route::resource('/Amber/works', 'BackendControllers\WorkController', ['except' => [
 		'show'
 	]]);
 
 	Route::post('/Amber/works/{$ids}', 'BackendControllers\WorkController@destroy');
-});
 
     Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
-    
+
     Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

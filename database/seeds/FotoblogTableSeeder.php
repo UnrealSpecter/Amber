@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class FotoblogsTableSeeder extends Seeder
+class FotoblogTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

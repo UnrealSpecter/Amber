@@ -14,25 +14,58 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <!-- jQuery -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 
         <!-- Bootstrap Date-Picker Plugin -->
         <!-- TODO do not load datepicker on every fucking page, you retard. -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
+        <link rel="stylesheet" href="../css/justifiedGallery.min.css" />
+        <script src="../js/jquery.justifiedGallery.min.js"></script>
+        <script src="../js/jquery.colorbox-min.js"></script>
+        <link rel="stylesheet" href="../css/colorbox.css" />
+        
+
         <script>
+            // $(document).ready(function(){
+            //   var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
+            //   var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+            //   var options={
+            //     format: 'yyyy-mm-dd',
+            //     container: container,
+            //     todayHighlight: true,
+            //     autoclose: true,
+            //   };
+            //   date_input.datepicker(options);
+            // })
+
+            // //galery plugin voor werken
+            // $("#work-gallery").justifiedGallery({
+            //     // rowHeight:120,
+            //     // maxRowHeight: 300,
+            //     // captions: true,
+            //     // margins: 5,
+            //     // lastRow: 'nojustify'
+            // });
             $(document).ready(function(){
-              var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
-              var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-              var options={
-                format: 'yyyy-mm-dd',
-                container: container,
-                todayHighlight: true,
-                autoclose: true,
-              };
-              date_input.datepicker(options);
-            })
+                console.log($("#mygallery").attr("id"));
+                $("#mygallery").justifiedGallery({
+                    rowHeight : 150,
+                    lastRow : 'nojustify',
+                    margins : 3
+                }).on('jg.complete', function () {
+                    $(this).find('a').colorbox({
+                        maxWidth : '80%',
+                        maxHeight : '80%',
+                        opacity : 0.8,
+                        transition : 'elastic',
+                        current : ''
+                    });
+                });
+            });
+
+
         </script>
 
         <!-- Fonts -->

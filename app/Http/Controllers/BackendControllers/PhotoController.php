@@ -24,6 +24,7 @@ class PhotoController extends Controller
         $fotoblog->title = $request->title;
         $fotoblog->description = $request->description;
         // check if there is an image uploaded, move it to the uploads folder and save the name.
+        dd($request);
         $image = $request->file('image');
         if($image->move(public_path("/uploads"), $image->getClientOriginalname())){
             $fotoblog->image = $image->getClientOriginalname();

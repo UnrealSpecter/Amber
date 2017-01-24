@@ -1,10 +1,10 @@
 <?php
-namespace App\Http\Controllers\AmberWebsite\BackendControllers;
+namespace App\Http\Controllers\BackendControllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
-// use App\Models\AmberWebsite\Work;
+use App\Models\Work;
 
 use \Input as Input;
 
@@ -20,16 +20,17 @@ class WorkController extends Controller
     }
 
     public function store(Request $request){
-        // $work = new Fotoblog();
-        // $work->caption = $request->caption;
-        // // check if there is an image uploaded, move it to the uploads folder and save the name.
-        // $image = $request->file('image');
-        // if($image->move(public_path("/uploads/works"), $image->getClientOriginalname())){
-        //     $fotoblog->image = $image->getClientOriginalname();
-        // }
-        // if($fotoblog->save()){
-        //     return redirect()->route('photos.index');
-        // }
+        $work = Work::create($request->all());
+        $image = $request->file('imagepath');
+    
+        if($image->move(public_path("/uploads/works"), $image->getClientOriginalname())){
+            $work->imagepath = $image->getClientOriginalname();
+        }
+
+        if($work->save()){
+            return redirect()->route('works.index');
+        }
+        
     }
 
     public function edit($id){
