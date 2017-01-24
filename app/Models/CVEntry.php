@@ -16,6 +16,6 @@ class CVEntry extends Model
 
     public function category()
     {
-        return $this->hasOne('App\Models\CVCategory', 'category_id');
+        return $this->belongsTo('App\Models\CVCategory', 'category_id');
     }
 }

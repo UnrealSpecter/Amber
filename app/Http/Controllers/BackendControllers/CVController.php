@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
 use App\Models\CVCategory;
+use App\Models\CVEntry;
 
 use \Input as Input;
 
@@ -12,30 +13,60 @@ class CVController extends Controller
 {
     public function index(){
         $categories = CVCategory::with('entries')->get();
-        dd($categories);
 
         return view('amber.backend.cv.index', compact($categories, 'categories'));
     }
 
     public function create(){
-        return view('amber.backend.cv.create');
+        $categories = CVCategory::all();
+
+        return view('amber.backend.cv.create', compact($categories, 'categories'));
     }
 
     public function store(Request $request){
-        // TODO Store CV stuff
+        $leftSide = $request->leftSide;
+        $rightSide = $request->rightSide;
+
+        $category = $request->category_id;
+
+        $cvEntry = new CVEntry;
+        $cvEntry->leftSide = $leftSide;
+        $cvEntry->rightSide = $rightSide;
+        $cvEntry->category()->associate($category);
+
+        $cvEntry->save();
+
+        return redirect()->route('CV.index');
     }
 
     public function edit($id){
-        // TODO load CV stuff
+        $cvEntry = CVEntry::with('category')->findOrFail($id);
+        $categories = CVCategory::all();
 
-        return view('amber.backend.cv.edit');
+        return view('amber.backend.cv.edit', compact($cvEntry, ['cvEntry', 'categories']));
     }
 
     public function update(Request $request, $id){
-        // TODO Update CV stuff
+        $leftSide = $request->leftSide;
+        $rightSide = $request->rightSide;
+
+        $category = $request->category_id;
+
+        $cvEntry = CVEntry::findOrFail($id);
+        $cvEntry->leftSide = $leftSide;
+        $cvEntry->rightSide = $rightSide;
+        $cvEntry->category()->associate($category);
+
+        $cvEntry->save();
+
+        return redirect()->route('CV.index');
     }
 
     public function destroy($id){
-        // TODO delete CV stuff
+        $cvEntry = CVEntry::find($id);
+
+        $cvEntry->delete();
+
+        return redirect()->route('CV.index');
     }
 }
