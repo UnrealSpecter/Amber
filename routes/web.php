@@ -56,9 +56,8 @@ Route::group(['middleware' => 'auth'], function () {
 	]]);
 
 	Route::post('/Amber/works/{$ids}', 'BackendControllers\WorkController@destroy');
-});
 
     Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
-    
+
     Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
 });
