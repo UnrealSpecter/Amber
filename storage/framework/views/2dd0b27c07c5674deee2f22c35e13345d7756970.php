@@ -12,7 +12,6 @@
             <?php echo e($entry->rightSide); ?>
 
                 <span class="pull-right">
-                    
                     <?php echo e(Form::open(['method' => 'DELETE', 'route' => array('CV.destroy', $entry->id), $entry->id])); ?>
 
                         <?php echo e(Form::button('<span class="glyphicon glyphicon-trash"</span>', ['type' => 'submit'])); ?>
@@ -21,7 +20,6 @@
 
                 </span>
                 <span class="pull-right">
-                    
                     <?php echo e(Form::open(['method' => 'GET', 'route' => array('CV.edit', $entry->id), $entry->id])); ?>
 
                         <?php echo e(Form::button('<span class="glyphicon glyphicon-pencil"</span>', ['type' => 'submit'])); ?>
