@@ -3,7 +3,7 @@
 @section('content')
 	@include('amber.resources.photos-submenu')
 	<h1> Edit Fotoblog entry </h1>
-	<form method="POST" action="{{URL::to('/Amber/dashboard/photos')}}/{{$fotoblog->id}}" enctype="multipart/form-data">
+	<form method="POST" action="{{URL::to('/Amber/photos')}}/{{$fotoblog->id}}" enctype="multipart/form-data">
 		<div class="form-group">
 		  <label for="name-input">Titel</label>
 		  <input type="text" class="form-control" name="title" id="title-input" placeholder="Titel" value="{{$fotoblog->title}}">

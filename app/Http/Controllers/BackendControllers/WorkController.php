@@ -34,29 +34,23 @@ class WorkController extends Controller
     }
 
     public function edit($id){
-        $fotoblog = Fotoblog::find($id);
+        $work = Work::find($id);
         return view('amber.backend.works.edit', compact($work, 'work'));
     }
 
     public function update(Request $request, $id){
-        // $fotoblog = Fotoblog::find($id);
-        // $fotoblog->title = $request->title;
-        // $fotoblog->description = $request->description;
-        // // check if there is an image uploaded, move it to the uploads folder and save the name.
-        // if($image = $request->file('image')){
-        //     $image->move(public_path("/uploads"), $image->getClientOriginalname());
-        //     $fotoblog->image = $image->getClientOriginalname();
-        // }
-        // if($fotoblog->save()){
-        //     return redirect()->route('photos.index');
-        // }
+        $work = Work::find($id);
+        $work->title = $request->title;
+        $work->dimensions = $request->dimensions;
+        $work->workDate = $request->workDate;
+        if($work->save()){
+            return redirect()->route('works.index');
+        }
     }
 
-    public function destroy(Request $request){
-        foreach($request as $workId){
-            $work = Work::findOrFail($workId);
-            $work->delete();
-        }
+    public function destroy($id){
+        $work = Work::findOrFail($id);
+        $work->delete();
         return redirect()->route('works.index');
     }
 

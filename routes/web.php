@@ -22,11 +22,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 /* Front-end route groups for Amber's website */
-Route::group(['prefix'=>'Amber','as'=>'Amber'], function(){
-    Route::get('/', ['as' => 'Amber', 'uses' => 'AmberWebsite\AmberController@index']);
-    Route::get('/werken', ['as' => 'werken', 'uses' => 'AmberWebsite\AmberController@werken']);
-    Route::get('/theater', ['as' => 'theater', 'uses' => 'AmberWebsite\AmberController@theater']);
-    Route::get('/cv', ['as' => 'cv', 'uses' => 'AmberWebsite\AmberController@cv']);
+Route::group(['prefix'=>'/','as'=>'/'], function(){
+    Route::get('/', function(){
+        return view('amber.frontend.index');
+    });
+    Route::get('/book', 'FrontEndControllers\BookController@index');
+    Route::get('/cv', 'FrontEndControllers\CVController@index');
+    Route::get('/photos', 'FrontEndControllers\PhotoController@index');
+    Route::get('/works', 'FrontEndControllers\WorkController@index');
+    Route::get('/performances', 'FrontEndControllers\PerformanceController@index');
 });
 
 /* Backend route groups for Amber's website */

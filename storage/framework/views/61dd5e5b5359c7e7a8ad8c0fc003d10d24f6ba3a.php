@@ -160,7 +160,7 @@
     <body>
         <div class="container col-lg-12">
             <!-- content is put here ! -->
-            @yield('content')
+            <?php echo $__env->yieldContent('content'); ?>
         </div>
     </body>
 </html>

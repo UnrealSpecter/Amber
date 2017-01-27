@@ -1,7 +1,5 @@
 <?php
-
-namespace App\Models\AmberWebsite;
-
+namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Fotoblog extends Model
