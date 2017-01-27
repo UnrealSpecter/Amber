@@ -94,7 +94,7 @@
          opacity:1;
         }
         body {
-            background-color: darkgrey;
+            background: url('../uploads/background.jpg');
         }
 
         @font-face {
