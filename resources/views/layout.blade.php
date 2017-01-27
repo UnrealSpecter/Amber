@@ -159,8 +159,11 @@
     </head>
     <body>
         <div class="container col-lg-12">
-            <!-- content is put here ! -->
+        <div class="row">
+        <!-- content is put here ! -->
             @yield('content')
+        </div>
+            
         </div>
     </body>
 </html>

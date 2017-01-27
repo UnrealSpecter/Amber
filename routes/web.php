@@ -23,9 +23,7 @@ Route::get('/home', 'HomeController@index');
 
 /* Front-end route groups for Amber's website */
 Route::group(['prefix'=>'/','as'=>'/'], function(){
-    Route::get('/', function(){
-        return view('amber.frontend.index');
-    });
+    Route::get('/', 'FrontEndControllers\HomeController@index');
     Route::get('/book', 'FrontEndControllers\BookController@index');
     Route::get('/cv', 'FrontEndControllers\CVController@index');
     Route::get('/photos', 'FrontEndControllers\PhotoController@index');

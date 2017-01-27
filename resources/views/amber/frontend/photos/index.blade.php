@@ -1,5 +1,7 @@
 @extends('layout')
+
 @section('content')
+@include('amber.resources.frontend-menu')
   @foreach ($fotoblogs as $fotoblog)
 	<div class="container col-lg-12 ">
 		<div class="row">

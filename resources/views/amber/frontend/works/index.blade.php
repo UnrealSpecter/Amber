@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+@include('amber.resources.frontend-menu')
 	<div id="mygallery" class="justified-gallery">
 		@foreach($works as $work)
 			<a href="/uploads/works/{{$work->imagepath}}">

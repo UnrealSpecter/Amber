@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+@include('amber.resources.frontend-menu')
   @foreach ($performances as $performance)
       <h1>{{$performance->name}}</h1>
       <h1>{{$performance->description}}</h1>

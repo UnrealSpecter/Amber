@@ -1,5 +1,7 @@
 
+
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php $__currentLoopData = $fotoblogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $fotoblog): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
 	<div class="container col-lg-12 ">
 		<div class="row">

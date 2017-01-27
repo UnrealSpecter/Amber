@@ -1,5 +1,6 @@
 
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php $__currentLoopData = $performances; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $performance): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
       <h1><?php echo e($performance->name); ?></h1>
       <h1><?php echo e($performance->description); ?></h1>

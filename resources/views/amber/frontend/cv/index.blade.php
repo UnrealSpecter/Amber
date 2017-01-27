@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+@include('amber.resources.frontend-menu')
   @foreach ($categories as $category)
       <h1>{{$category->categoryName}}</h1>
       @foreach($category->entries as $entry)
