@@ -23,7 +23,7 @@
 					</div>
 
 				</div>
-				<img class="center-block fotoblog" style="width: 75%; height: 50%;" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
+				<img class="center-block fotoblog img-responsive" style="width: 75%; height: 50%;" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
 				<!-- <p class="text-center">{{date('d F, Y', strtotime($fotoblog->created_at))}}</p> -->
 				
 				<div class="photo-tekst-container fotoblog-date" style="position: absolute; top: 30%; right: 0%; width: 200px; height: 200px; z-index: 9999;">

@@ -48,6 +48,11 @@
                     classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
                     offset: 300
                 });
+
+                $('.performance').addClass("hideme").viewportChecker({
+                    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+                    offset: 300
+                });
                 
                 //datepicker code
                 var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
@@ -158,7 +163,7 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <!-- content is put here ! -->
                 @yield('content')
