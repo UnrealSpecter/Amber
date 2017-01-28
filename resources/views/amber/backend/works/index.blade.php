@@ -19,7 +19,7 @@
 						</button>
 					</form>
 				</div>
-				<img src="/uploads/works/{{$work->imagepath}}"/>
+				<img src="/uploads/works/thumbs/{{$work->imagepath}}"/>
 				<div class="caption">
 					<div>{{$work->title}}</div>
 					<div>{{$work->dimensions}}</div>

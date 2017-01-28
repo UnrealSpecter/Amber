@@ -6,7 +6,7 @@
 			<a href="/uploads/works/{{$work->imagepath}}">
 				<div style="position: absolute; height: 50px; width: 50px; right: 0; z-index: 100">
 				</div>
-				<img src="/uploads/works/{{$work->imagepath}}"/>
+				<img src="/uploads/works/thumbs/{{$work->imagepath}}"/>
 				<div class="caption">
 					<div>{{$work->title}}</div>
 					<div>{{$work->dimensions}}</div>

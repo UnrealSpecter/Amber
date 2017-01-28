@@ -6,7 +6,7 @@
 			<a href="/uploads/works/<?php echo e($work->imagepath); ?>">
 				<div style="position: absolute; height: 50px; width: 50px; right: 0; z-index: 100">
 				</div>
-				<img src="/uploads/works/<?php echo e($work->imagepath); ?>"/>
+				<img src="/uploads/works/thumbs/<?php echo e($work->imagepath); ?>"/>
 				<div class="caption">
 					<div><?php echo e($work->title); ?></div>
 					<div><?php echo e($work->dimensions); ?></div>
