@@ -5,6 +5,11 @@
 
   @foreach ($categories as $category)
       <h1>{{$category->categoryName}}</h1>
+      <a class="btn btn-small btn-info" href="{{ URL::to('Amber/CV/categories/' . $category->id . '/edit')}}">Edit</a>
+      {{ Form::open(['method' => 'DELETE', 'route' => ['categories.destroy', $category->id]])}}
+        {{Form::hidden('id', $category->id)}}
+        {{Form::submit('Delete', ['class' => 'btn', 'btn-danger'])}}
+      {{ Form::close() }}
       @foreach($category->entries as $entry)
         <div class="row">
             <div class="col-md-6">{{$entry->leftSide}}</div>
