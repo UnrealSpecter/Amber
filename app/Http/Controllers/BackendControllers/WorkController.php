@@ -5,8 +5,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
 use App\Models\Work;
-use Intervention\Image\ImageManagerStatic as Image;
 
+use Intervention\Image\ImageManagerStatic as Image;
 use \Input as Input;
 
 class WorkController extends Controller

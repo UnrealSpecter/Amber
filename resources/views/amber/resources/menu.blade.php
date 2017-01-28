@@ -17,7 +17,7 @@
         <li><a href="/Amber/performances">Theater</a></li>
         <li><a href="/Amber/CV">CV</a></li>
         <li><a href="/Amber/photos">Fotoblog</a></li>
-        <li><a href="/Amber/bookerino">Bookerino</a></li>
+        <li><a href="/Amber/agendafragments">Agenda</a></li>
         <li><a href="/logout">logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->

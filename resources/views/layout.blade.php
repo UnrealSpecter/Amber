@@ -30,6 +30,10 @@
         <link rel="stylesheet" type="text/css" href="../css/animate.css" />
         <script src="../js/viewportchecker.js"></script>
 
+        <!-- agendafragments includes -->
+        <script type="text/javascript" src="../js/jquery.min.1.7.js"></script>
+        <script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+
         <script>
             $(document).ready(function(){
               
