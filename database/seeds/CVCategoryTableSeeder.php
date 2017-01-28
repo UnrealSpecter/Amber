@@ -13,22 +13,16 @@ class CVCategoryTableSeeder extends Seeder
     {
         DB::table('cvcategories')->insert([
         [
-            'categoryName' => 'Werkervaring'
+            'categoryName' => 'Opleidingen'
         ],
         [
-            'categoryName' => 'Opleiding'
+            'categoryName' => 'Kunstprojecten'
         ],
         [
-            'categoryName' => 'Activiteiten'
+            'categoryName' => 'Theaterprojecten en -producties'
         ],
         [
-            'categoryName' => 'Cursussen'
-        ],
-        [
-            'categoryName' => 'Competenties'
-        ],
-        [
-            'categoryName' => 'Interesses en Overige'
+            'categoryName' => 'Exposities'
         ]]);
     }
 }
