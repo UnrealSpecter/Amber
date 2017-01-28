@@ -20,7 +20,10 @@ class CreateCvTable extends Migration
             $table->string('rightSide');
             $table->timestamps();
 
-            $table->foreign('category_id')->references('id')->on('cvcategories');
+            $table->foreign('category_id')
+                  ->references('id')
+                  ->on('cvcategories')
+                  ->onDelete('cascade');
         });
     }
 
