@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CVCategoryTableSeeder::class);
         $this->call(CVTableSeeder::class);
         $this->call(PerformanceTableSeeder::class);
+        $this->call(WorkTableSeeder::class);
     }
 }

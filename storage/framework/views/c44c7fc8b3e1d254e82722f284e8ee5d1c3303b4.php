@@ -2,7 +2,7 @@
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php $__currentLoopData = $performances; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $performance): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-  <div class="row performance hidden">
+  <div class="row performance">
   	<div class="col-lg-4">
   		
   	</div>
@@ -17,7 +17,7 @@
   	<div class="col-lg-4"></div>
   </div>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-	<script>
+<!-- 	<script>
 		//loop categories and store them in the array for use
 		var performances = [];
 		$('.performance').each(function(index, object) {
@@ -33,7 +33,7 @@
 		    clearInterval(interval);
 		  }
 		}, 750);
-	</script>
+	</script> -->
 
 <?php $__env->stopSection(); ?>
 

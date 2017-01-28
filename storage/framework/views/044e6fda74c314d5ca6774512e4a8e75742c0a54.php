@@ -32,7 +32,6 @@
   <script>
     //loop categories and store them in the array for use
     var categories = [];
-    console.log(categories);
     $('.category').each(function(index, object) {
       categories.push(object);
     });

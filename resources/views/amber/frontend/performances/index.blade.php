@@ -2,9 +2,8 @@
 @section('content')
 @include('amber.resources.frontend-menu')
   @foreach ($performances as $performance)
-  <div class="row performance hidden">
+  <div class="row performance">
   	<div class="col-lg-4">
-  		
   	</div>
   	<div class="col-lg-4 text-center">
 		<h1 class='text-center' style="color: white;">{{$performance->name}}</h1>
@@ -17,7 +16,7 @@
   	<div class="col-lg-4"></div>
   </div>
   @endforeach
-	<script>
+<!-- 	<script>
 		//loop categories and store them in the array for use
 		var performances = [];
 		$('.performance').each(function(index, object) {
@@ -33,6 +32,6 @@
 		    clearInterval(interval);
 		  }
 		}, 750);
-	</script>
+	</script> -->
 
 @endsection
