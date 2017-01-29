@@ -4,7 +4,6 @@
   <?php $__currentLoopData = $performances; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $performance): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
   <div class="row performance">
   	<div class="col-lg-4">
-  		
   	</div>
   	<div class="col-lg-4 text-center">
 		<h1 class='text-center' style="color: white;"><?php echo e($performance->name); ?></h1>

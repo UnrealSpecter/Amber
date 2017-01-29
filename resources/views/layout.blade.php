@@ -14,25 +14,35 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <!-- jQuery -->
-        <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+        <!-- <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script> -->
+          <script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script>
 
         <!-- Bootstrap Date-Picker Plugin -->
         <!-- TODO do not load datepicker on every fucking page, you retard. -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<!--         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
 
+        <!-- justified gallery -->
         <link rel="stylesheet" href="../css/justifiedGallery.min.css" />
         <script src="../js/jquery.justifiedGallery.min.js"></script>
-        <script src="../js/jquery.colorbox-min.js"></script>
-        <link rel="stylesheet" href="../css/colorbox.css" />
+        <!-- swipebox -->
+      
+        <script src="../js/jquery.swipebox.min.js"></script>
+        <link rel="stylesheet" href="../css/swipebox.min.css" />
+        <!-- colorbox -->
+        <!-- <script src="../js/jquery.colorbox-min.js"></script> -->
+        <!-- <link rel="stylesheet" href="../css/colorbox.css" /> -->
+
 
         <!-- fotoblog foto animations -->
         <link rel="stylesheet" type="text/css" href="../css/animate.css" />
         <script src="../js/viewportchecker.js"></script>
 
         <!-- agendafragments includes -->
-        <script type="text/javascript" src="../js/jquery.min.1.7.js"></script>
+        <!-- <script type="text/javascript" src="../js/jquery.min.1.7.js"></script> -->
         <script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+
+      
 
         <script>
             $(document).ready(function(){
@@ -59,33 +69,26 @@
                 });
                 
                 //datepicker code
-                var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
-                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-                var options={
-                    format: 'yyyy-mm-dd',
-                    container: container,
-                    todayHighlight: true,
-                    autoclose: true,
-                };
-                date_input.datepicker(options);
+                // var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
+                // var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                // var options={
+                //     format: 'yyyy-mm-dd',
+                //     container: container,
+                //     todayHighlight: true,
+                //     autoclose: true,
+                // };
+                // date_input.datepicker(options);
                 
                 //justified gallery
-                $("#mygallery").justifiedGallery({
+                $("#works-gallery").justifiedGallery({
                     rowHeight : 200,
+                    maxRowHeight: 300,
                     lastRow : 'nojustify',
-                    margins : 3
+                    margins : 10
+                }).on('jg.complete', function () {
+                    $('.swipebox').swipebox();
                 });
-
-                // }).on('jg.complete', function () {
-                //     $(this).find('a').colorbox({
-                //         maxWidth : '80%',
-                //         maxHeight : '80%',
-                //         opacity : 0.8,
-                //         transition : 'elastic',
-                //         current : ''
-                //     });
-                // });
-                           
+                                           
             });
 
 

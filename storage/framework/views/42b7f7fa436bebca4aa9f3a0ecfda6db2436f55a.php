@@ -5,7 +5,6 @@
   <?php $__currentLoopData = $fotoblogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $fotoblog): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
 	<div class="container col-lg-12 ">
 		<div class="row">
-	<!-- 		<div class="col-lg-0"></div> -->
 			<div class="col-lg-12" style="">
 				<!-- <div class="fotoblog-tekst animated slideInLeft" style="position: absolute; top: 30%; height: 100px; rgba(255,0,0,0.4); /*border: solid black 1px;*/ color: white; z-index: 9999;">
 				</div> -->
@@ -36,7 +35,10 @@
 					</div>
 				</div>
 			</div>
-		<!-- 	<div class="col-lg-1"></div> -->
+		</div>
+		<div class="row">
+			<div class="col-lg-12" style="height: 150px;">
+			</div>
 		</div>
 	</div>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
