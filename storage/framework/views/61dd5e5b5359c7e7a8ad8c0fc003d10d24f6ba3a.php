@@ -63,10 +63,10 @@
                     offset: 300
                 });
 
-                $('.performance').addClass("hideme").viewportChecker({
-                    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-                    offset: 300
-                });
+                // $('.performance').addClass("hideme").viewportChecker({
+                //     classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+                //     offset: 300
+                // });
                 
                 //datepicker code
                 // var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
@@ -88,7 +88,12 @@
                 }).on('jg.complete', function () {
                     $('.swipebox').swipebox();
                 });
-                                           
+               
+                //scroll to a certain element
+                // $('html, body').animate({
+                //     scrollTop: $("#next-performance").offset().top
+                // }, 2000);
+                                   
             });
 
 
