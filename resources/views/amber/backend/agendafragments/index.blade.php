@@ -3,7 +3,6 @@
 @section('content')
 @include('amber.resources.agenda-fragments-submenu')
 	
-<h1 style="color: white;" class="text-center">Agenda Fragments</h1>
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">

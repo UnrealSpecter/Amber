@@ -5,14 +5,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
-use App\Models\Agenda;
+use App\Models\Agendafragment;
 use Illuminate\Routing\Redirector;
 
 use \Input as Input;
 
-class AgendaController extends Controller
+class AgendafragmentController extends Controller
 {
     public function index(){
-        return view('amber.frontend.book.index');
+    	$agendafragments = Agendafragment::all();
+        return view('amber.frontend.agendafragments.index', compact($agendafragments, 'agendafragments'));
     }
 }

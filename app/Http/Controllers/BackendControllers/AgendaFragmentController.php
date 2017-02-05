@@ -5,16 +5,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
-use App\Models\AgendaFragment;
+use App\Models\Agendafragment;
 use Illuminate\Routing\Redirector;
 
 use Intervention\Image\ImageManagerStatic as Image;
 use \Input as Input;
 
-class AgendaFragmentsController extends Controller
+class AgendaFragmentController extends Controller
 {
 	public function index(){
-        $agendafragments = AgendaFragment::all();
+        $agendafragments = Agendafragment::all();
         return view('amber.backend.agendafragments.index', compact($agendafragments, 'agendafragments'));
     }
 
@@ -23,7 +23,7 @@ class AgendaFragmentsController extends Controller
     }
 
     public function store(Request $request){
-        $agendafragment = new AgendaFragment;
+        $agendafragment = new Agendafragment;
         $image = $request->file('imagepath');
         //save orignal image to uploads
         Image::make($image)->save(public_path('/uploads/agendafragments/') . $image->getClientOriginalname());

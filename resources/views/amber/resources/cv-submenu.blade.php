@@ -15,7 +15,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="/Amber/CV">Overview</a></li>
           <li><a href="/Amber/CV/create">Create CV Entry</a></li>
-          <li><a href="/Amber/CV/create">Create CV Category</a></li>
+          <li><a href="/Amber/CV/categories/create">Create CV Category</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

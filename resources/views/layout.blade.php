@@ -81,10 +81,10 @@
                 
                 //justified gallery
                 $("#works-gallery").justifiedGallery({
-                    rowHeight : 200,
-                    maxRowHeight: 300,
+                    rowHeight : 300,
+                    maxRowHeight: 400,
                     lastRow : 'nojustify',
-                    margins : 10
+                    margins : 3
                 }).on('jg.complete', function () {
                     $('.swipebox').swipebox();
                 });
@@ -110,8 +110,9 @@
         .visible{
          opacity:1;
         }
+        /*body background of the entire website*/
         body {
-            background: url('../uploads/background.jpg');
+            background: url('../uploads/background-1.jpg');
         }
 
         @font-face {
@@ -120,58 +121,9 @@
         }
 
         h1, h2, h3 {
-            font-family: "Courier";
+            font-family: Georgia,Times,Times New Roman,serif; 
         }
-      /*      html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway';
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }*/
         </style>
     </head>
     <body>
