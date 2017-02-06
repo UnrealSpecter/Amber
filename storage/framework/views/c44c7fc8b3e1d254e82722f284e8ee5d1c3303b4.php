@@ -19,7 +19,7 @@
 		</div>
 		<div class="col-lg-6 text-center perfomance-main" style="height: 400px; box-sizing: border-box;">
 			<h1 class='text-center' style="color: white;"><?php echo e($performance->name); ?></h1>
-			<h1 style="font-size: 5em; color: white;"><?php echo e(date('d F', strtotime($performance->performanceDate))); ?></h2>
+			<h1 style="font-size: 5em; color: white;"><?php echo e(date('d F Y', strtotime($performance->performanceDate))); ?></h2>
 			<img class="center-block img-responsive" style="position: absolute; z-index: -1; top: 0; left: 0; height: 100%; width: 100%;" src="/uploads/<?php echo e($performance->mediaItem); ?>" alt="<?php echo e($performance->name); ?>">
 		</div>
 		<!-- <div class="col-lg-1"></div> -->
