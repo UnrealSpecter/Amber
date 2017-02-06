@@ -10,11 +10,6 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
-Route::get('/', function () {
-    return view('layout');
-});
-
 //automatically made login routes
 Auth::routes();
 
@@ -24,7 +19,7 @@ Route::get('/home', 'HomeController@index');
 /* Front-end route groups for Amber's website */
 Route::group(['prefix'=>'/','as'=>'/'], function(){
     Route::get('/', 'FrontEndControllers\HomeController@index');
-    Route::get('/book', 'FrontEndControllers\BookController@index');
+    Route::get('/agendafragments', 'FrontEndControllers\AgendaFragmentController@index');
     Route::get('/cv', 'FrontEndControllers\CVController@index');
     Route::get('/photos', 'FrontEndControllers\PhotoController@index');
     Route::get('/works', 'FrontEndControllers\WorkController@index');
@@ -51,7 +46,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
 
-    Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
+    // Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
+    Route::resource('/Amber/agendafragments', 'BackendControllers\AgendafragmentController', ['except' => ['show']]);
 
     Route::resource('/Amber/CV/categories', 'BackendControllers\CVCategoryController', ['except' => ['index', 'show']]);
 });

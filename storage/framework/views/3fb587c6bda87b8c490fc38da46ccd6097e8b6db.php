@@ -1,1 +1,0 @@
-amber front-end homepage

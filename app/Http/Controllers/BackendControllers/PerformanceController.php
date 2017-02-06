@@ -8,13 +8,14 @@ use DB;
 use App\Models\Performance;
 use Illuminate\Routing\Redirector;
 
+
 use \Input as Input;
+
 
 class PerformanceController extends Controller
 {
     public function index(){
         $performances = Performance::all();
-
         return view('amber.backend.performances.index', compact($performances, 'performances'));
     }
 
