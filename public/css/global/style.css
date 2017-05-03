@@ -1,0 +1,19 @@
+.hideme{
+ opacity:0;
+}
+.visible{
+ opacity:1;
+}
+
+body {
+    background: url('../../uploads/background-1.jpg');
+}
+
+@font-face {
+    font-family: "Courier";
+    src: url('../../fonts/courier.ttf') format("truetype");
+}
+
+h1, h2, h3 {
+    font-family: Georgia,Times,Times New Roman,serif;
+}

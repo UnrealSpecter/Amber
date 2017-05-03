@@ -1,3 +1,9 @@
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" href="<?php echo e(URL::asset('css/performances/style.css')); ?>"/>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+	<script src="<?php echo e(URL::asset('js/performances/script.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -41,50 +47,8 @@
 		</div>
 		<div class="col-lg-2"></div>
 	</div>
-	<!-- opmaak voor closestPerformance -->
 	<?php endif; ?>
 	<?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-
-	<script>
-		//loop categories and store them in the array for use
-		// var performances = [];
-		// $('.performance').each(function(index, performance) {
-		// 	//add hidden to each main element while storing them so they can be uncovered
-		// 	$(performance).addClass('hidden');
-	 //  		performances.push(performance);
-		// });
-		// //set start index
-		// var index = 0;
-		// //setInterval half a second and loop through categories and removeClass
-		// var interval = setInterval(function() { 
-		//   $(performances[index]).removeClass('hidden');
-		//   if(index == performances.length - 1){
-		//     clearInterval(interval);
-		//   }
-		//   index++;
-		// }, 500);
-
-		$('html, body').animate({
-                scrollTop: $(".next-performance").offset().top
-            }, 2000);
-
-		//on hover show the description with an animation
-		$('.perfomance-main').hover(
-			function() {
-				var performance = $(this).siblings('.performance-description-container').find('.performance-description-block');
-				if(performance.hasClass('hidden')){
-					performance.removeClass('hidden');
-				}
-				performance.removeClass('animated slideOutLeft');
-				performance.addClass('animated slideInRight');
-			},
-			function() {
-				var performance = $(this).siblings('.performance-description-container').find('.performance-description-block');
-				performance.removeClass('animated slideInRight');
-				performance.addClass('animated slideOutLeft');
-			}
-		);
-
-	</script>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

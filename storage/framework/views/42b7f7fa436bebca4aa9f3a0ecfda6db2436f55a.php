@@ -1,4 +1,11 @@
-
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" href="<?php echo e(URL::asset('css/photos/style.css')); ?>"/>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(URL::asset('plugins/viewportchecker/js/viewport.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('plugins/viewportchecker/js/viewportchecker.js')); ?>"></script>
+	<script src="<?php echo e(URL::asset('js/photos/script.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -8,7 +15,7 @@
 			<div class="col-lg-12" style="">
 				<!-- <div class="fotoblog-tekst animated slideInLeft" style="position: absolute; top: 30%; height: 100px; rgba(255,0,0,0.4); /*border: solid black 1px;*/ color: white; z-index: 9999;">
 				</div> -->
-				
+
 				<div class="photo-tekst-container fotoblog-tekst" style="position: absolute; top: 30%; width: 300px; z-index: 9999;">
 					<div class="background-block" style="background: red; filter: alpha(opacity=30); -moz-opacity: 0.3; opacity: 0.3; position: absolute; top: 0; left: 0; width: 100%;">
 					</div>
@@ -24,7 +31,7 @@
 				</div>
 				<img class="center-block fotoblog img-responsive" style="width: 75%; height: 50%;" src="/uploads/<?php echo e($fotoblog->image); ?>" alt="<?php echo e($fotoblog->title); ?>">
 				<!-- <p class="text-center"><?php echo e(date('d F, Y', strtotime($fotoblog->created_at))); ?></p> -->
-				
+
 				<div class="photo-tekst-container fotoblog-date" style="position: absolute; top: 30%; right: 0%; width: 200px; height: 200px; z-index: 9999;">
 					<div class="background-block" style="background: red; filter: alpha(opacity=30); -moz-opacity: 0.3; opacity: 0.3; position: absolute; top: 0; left: 0; height: inherit; width: 100%;">
 					</div>

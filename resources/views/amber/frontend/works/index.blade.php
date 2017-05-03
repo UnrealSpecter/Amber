@@ -1,3 +1,13 @@
+@section('css')
+	<link rel="stylesheet" href="{{ URL::asset('plugins/justified-gallery/css/justifiedGallery.min.css')}}" />
+	<link rel="stylesheet" href="{{ URL::asset('plugins/swipebox/css/swipebox.min.css')}}" />
+	<link rel="stylesheet" href="{{ URL::asset('css/works/style.css')}}"/>
+@endsection
+@section('js')
+	<script src="{{ URL::asset('plugins/justified-gallery/js/jquery.justifiedGallery.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/swipebox/js/jquery.swipebox.min.js')}}"></script>
+	<script src="{{ URL::asset('js/works/script.js') }}"></script>
+@endsection
 @extends('layout')
 @section('content')
 @include('amber.resources.frontend-menu')
@@ -26,22 +36,4 @@
 			</div>
 		</div>
 		<div class="col-lg-1"></div>
-	<script>
-	//loop categories and store them in the array for use
-	var works = [];
-	$('.work').each(function(index, object) {
-		works.push(object);
-	});
-	//set start index
-	var index = 0;
-	//setInterval half a second and loop through categories and removeClass
-	var interval = setInterval(function() { 
-		$(works[index]).removeClass('hidden');
-		index++;
-		if(index == works.length){
-			clearInterval(interval);
-		}
-	}, 250);
-	</script>
-
 @endsection

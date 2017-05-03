@@ -1,3 +1,9 @@
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" href="<?php echo e(URL::asset('css/cv/style.css')); ?>"/>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+	<script src="<?php echo e(URL::asset('js/cv/script.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -12,7 +18,7 @@
             <?php else: ?>
               <h1 class="animated fadeInRightBig text-left" style="font-weight: bold; color:#77aaff;"><?php echo e($category->categoryName); ?></h1>
             <?php endif; ?>
-          </div> 
+          </div>
           <div class="col-lg-8">
           </div>
         </div>
@@ -31,24 +37,6 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
       </div>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-
-  <script>
-    //loop categories and store them in the array for use
-    var categories = [];
-    $('.category').each(function(index, object) {
-      categories.push(object);
-    });
-    //set start index
-    var index = 0;
-    //setInterval half a second and loop through categories and removeClass
-    var interval = setInterval(function() { 
-      $(categories[index]).removeClass('hidden');
-      index++;
-      if(index == categories.length){
-        clearInterval(interval);
-      }
-    }, 500);
-  </script>
-
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

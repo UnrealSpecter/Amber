@@ -1,3 +1,9 @@
+@section('css')
+	<link rel="stylesheet" href="{{ URL::asset('css/cv/style.css')}}"/>
+@endsection
+@section('js')
+	<script src="{{ URL::asset('js/cv/script.js') }}"></script>
+@endsection
 @extends('layout')
 @section('content')
 @include('amber.resources.frontend-menu')
@@ -12,7 +18,7 @@
             @else
               <h1 class="animated fadeInRightBig text-left" style="font-weight: bold; color:#77aaff;">{{$category->categoryName}}</h1>
             @endif
-          </div> 
+          </div>
           <div class="col-lg-8">
           </div>
         </div>
@@ -31,23 +37,4 @@
         @endforeach
       </div>
   @endforeach
-
-  <script>
-    //loop categories and store them in the array for use
-    var categories = [];
-    $('.category').each(function(index, object) {
-      categories.push(object);
-    });
-    //set start index
-    var index = 0;
-    //setInterval half a second and loop through categories and removeClass
-    var interval = setInterval(function() { 
-      $(categories[index]).removeClass('hidden');
-      index++;
-      if(index == categories.length){
-        clearInterval(interval);
-      }
-    }, 500);
-  </script>
-
 @endsection

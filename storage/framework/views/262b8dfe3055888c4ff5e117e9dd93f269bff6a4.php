@@ -1,3 +1,13 @@
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" href="<?php echo e(URL::asset('plugins/justified-gallery/css/justifiedGallery.min.css')); ?>" />
+	<link rel="stylesheet" href="<?php echo e(URL::asset('plugins/swipebox/css/swipebox.min.css')); ?>" />
+	<link rel="stylesheet" href="<?php echo e(URL::asset('css/works/style.css')); ?>"/>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+	<script src="<?php echo e(URL::asset('plugins/justified-gallery/js/jquery.justifiedGallery.min.js')); ?>"></script>
+	<script src="<?php echo e(URL::asset('plugins/swipebox/js/jquery.swipebox.min.js')); ?>"></script>
+	<script src="<?php echo e(URL::asset('js/works/script.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -26,24 +36,6 @@
 			</div>
 		</div>
 		<div class="col-lg-1"></div>
-	<script>
-	//loop categories and store them in the array for use
-	var works = [];
-	$('.work').each(function(index, object) {
-		works.push(object);
-	});
-	//set start index
-	var index = 0;
-	//setInterval half a second and loop through categories and removeClass
-	var interval = setInterval(function() { 
-		$(works[index]).removeClass('hidden');
-		index++;
-		if(index == works.length){
-			clearInterval(interval);
-		}
-	}, 250);
-	</script>
-
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
