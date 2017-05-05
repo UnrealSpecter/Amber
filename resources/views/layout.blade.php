@@ -8,9 +8,10 @@
         <title>Laravel</title>
 
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/bootstrap.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}"> -->
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/animate.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/style.css') }}">
+    	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/nav-style.css')}}"/>
         @yield('css')
 
         <!-- jQuery -->
@@ -52,7 +53,6 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <!-- content is put here ! -->
                 @yield('content')
             </div>
         </div>

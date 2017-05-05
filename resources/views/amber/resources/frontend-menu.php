@@ -27,38 +27,3 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<style>
-.navbar {
-  background: black;
-  border: none;
-  margin:0px;
-}
-
-.navbar-default .navbar-brand {
-  color: white;
-  font-family: courier;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-
-ul {
-    height: 100px; 
-    line-height: 100px;
-
-}
-.navbar-default .navbar-nav>li>a {
-  height: 100%;
-  color: white;
-  font-family: courier;
-  font-size: 1.5em;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-  color: white;
-  border-bottom: solid white 1px;
-}
-</style>

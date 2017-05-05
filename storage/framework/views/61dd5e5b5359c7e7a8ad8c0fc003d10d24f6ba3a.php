@@ -8,9 +8,10 @@
         <title>Laravel</title>
 
         <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/bootstrap.min.css')); ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/app.css')); ?>">
+        <!-- <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/app.css')); ?>"> -->
         <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/animate.css')); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/style.css')); ?>">
+    	<link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/global/nav-style.css')); ?>"/>
         <?php echo $__env->yieldContent('css'); ?>
 
         <!-- jQuery -->
@@ -52,7 +53,6 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <!-- content is put here ! -->
                 <?php echo $__env->yieldContent('content'); ?>
             </div>
         </div>

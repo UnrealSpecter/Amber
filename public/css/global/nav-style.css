@@ -1,0 +1,75 @@
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .navbar-default .navbar-nav>li>a {
+      font-size: 1.5vw;
+    }
+    .navbar-brand > h1{
+        font-size: 2.5vw;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.4vw;
+    }
+    .navbar-brand > h1 {
+        font-size: 2.5vw;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.3vw;
+    }
+    .navbar-brand > h1 {
+        font-size: 2vw;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.4vw;
+    }
+    .navbar-brand > h1 {
+        font-size: 2.5vw;
+    }
+}
+
+.navbar {
+    background: black;
+    border: none;
+    margin: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-family: courier;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    height: 100px;
+    line-height: 100px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    height: 100%;
+    color: white;
+    font-family: courier;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.navbar-default .navbar-right>li>a:hover {
+    color: white;
+    border-bottom: solid white 1px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+}
