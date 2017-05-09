@@ -1,0 +1,52 @@
+.photo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: blue;*/
+    margin: 0;
+    padding: 0;
+}
+
+.fotoblog {
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*left: 12.5%;*/
+    /*height: 100%;*/
+    height: 100%;
+}
+
+.info-background {
+    background: red;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.date-info-wrapper {
+    pointer-events: none;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.info-wrapper > hr {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}

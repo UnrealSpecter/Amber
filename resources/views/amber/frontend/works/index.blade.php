@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="{{ URL::asset('css/works/style.css')}}"/>
 @endsection
 @section('js')
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script>
 	<script src="{{ URL::asset('plugins/justified-gallery/js/jquery.justifiedGallery.min.js') }}"></script>
 	<script src="{{ URL::asset('plugins/swipebox/js/jquery.swipebox.min.js')}}"></script>
 	<script src="{{ URL::asset('js/works/script.js') }}"></script>
@@ -19,7 +20,7 @@
 						<div style="position: absolute; height: 50px; width: 50px; right: 0; z-index: 100">
 						</div>
 						<img src="/uploads/works/{{$work->imagepath}}"/>
-						<div class="caption">
+						<div class="caption animated fadeInUp">
 							<div>
 								<h1 class="text-center">{{$work->title}}</h1>
 							</div>

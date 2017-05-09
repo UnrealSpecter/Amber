@@ -16,7 +16,6 @@
 
         <!-- jQuery -->
         <script type="text/javascript" src="<?php echo e(URL::asset('js/global/jquery-3.1.1.min.js')); ?>"></script>
-        <!-- <script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script> -->
         <script type="text/javascript" src="<?php echo e(URL::asset('js/global/modernizr.2.5.3.min.js')); ?>"></script>
         <?php echo $__env->yieldContent('js'); ?>
 
