@@ -10,38 +10,29 @@
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 	<?php $__currentLoopData = $fotoblogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $fotoblog): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-	<div class="col-lg-12 photo-wrapper">
-		<!-- <div class="fotoblog-tekst animated slideInLeft" style="position: absolute; top: 30%; height: 100px; rgba(255,0,0,0.4); /*border: solid black 1px;*/ color: white; z-index: 9999;">
-		</div> -->
-		<!-- <div class="photo-tekst-container fotoblog-tekst" style="z-index: 9999;">
-			<div class="background-block" style="background: red; filter: alpha(opacity=30); -moz-opacity: 0.3; opacity: 0.3; position: absolute; top: 0; left: 0; width: 100%;">
-			</div>
-			<div class="text-block" style="position: absolute; top: 0; left: 0; width: 100%; color: white; text-align: center;">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 photo-wrapper">
 
-			</div>
-		</div> -->
-		<div class="info-wrapper" style="z-index: 3; position: absolute; top: 0; left: 0; display: flex; height: 100%; width: 100%; flex-flow: row; align-items: center;">
-
-			<div class="col-lg-2 col-lg-offset-1 fotoblog-tekst" style="height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; font-size: 2em;">
+		<div class="info-wrapper">
+			<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-0 fotoblog-tekst" style="height: 50%;">
+				<div class="info-background"></div>
 				<h1><?php echo e($fotoblog->title); ?></h1>
 				<?php if(!empty($fotoblog->description)): ?>
-					<hr style="width: 50%">
+					<hr style="width: 75%">
 					<h3><?php echo e($fotoblog->description); ?></h3>
 				<?php endif; ?>
 			</div>
 
-			<div class="col-lg-2 col-lg-offset-6 fotoblog-date" style="height: 75%;">
+			<div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-3 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 fotoblog-date">
 				<div class="info-background"></div>
 				<div class="date-info-wrapper">
 					<h1><?php echo e(date('d F', strtotime($fotoblog->created_at))); ?></h1>
 					<h3 style="font-weight: bold;"><?php echo e(date('Y', strtotime($fotoblog->created_at))); ?></h3>
 				</div>
 			</div>
-
 		</div>
 
-		<div class="img-wrapper" style="z-index: 2; display: flex; justify-content: center; height: 100%; width: 100%;">
-			<img class="col-lg-8 center-block fotoblog img-responsive" src="/uploads/<?php echo e($fotoblog->image); ?>" alt="<?php echo e($fotoblog->title); ?>">
+		<div class="img-wrapper">
+			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" src="/uploads/<?php echo e($fotoblog->image); ?>" alt="<?php echo e($fotoblog->title); ?>">
 		</div>
 
 	</div>

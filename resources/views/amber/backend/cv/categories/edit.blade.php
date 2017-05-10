@@ -1,6 +1,6 @@
 @extends('layout')
-@include('amber.resources.menu')
 @section('content')
+@include('amber.resources.menu')
 	<h1> Edit Category </h1>
 	<form method="POST" action="{{URL::to('/Amber/CV/categories')}}/{{$category->id}}" enctype="multipart/form-data">
 		<div class="form-group">

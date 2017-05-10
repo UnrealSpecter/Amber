@@ -1,6 +1,6 @@
-@extends('layout')
-@section('content')
-@include('amber.resources.menu')
+
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <nav class="navbar navbar-default navbar-static-top bootstrap-iso">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,13 +16,15 @@
   </nav>
 
   <h1> New CV category </h1>
-  <form method="POST" action="{{URL::to('/Amber/CV/categories')}}" enctype="multipart/form-data">
+  <form method="POST" action="<?php echo e(URL::to('/Amber/CV/categories')); ?>" enctype="multipart/form-data">
     <div class="form-group">
       <label for="name-input">Categorie naam</label>
       <input type="text" class="form-control" name="categoryName" id="title-input" placeholder="Titel">
-      <input type="hidden" name="_token" value="{{csrf_token()}}">
+      <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
     </div>
     <button type="submit" class="btn btn-lg">Save</button>
   </form>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,6 +1,6 @@
-@extends('layout')
-@section('content')
-@include('amber.resources.menu')
+
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <nav class="navbar navbar-default navbar-static-top bootstrap-iso">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,7 +16,7 @@
   </nav>
 
   <h1> New CV entry </h1>
-  <form method="POST" action="{{URL::to('/Amber/CV')}}" enctype="multipart/form-data">
+  <form method="POST" action="<?php echo e(URL::to('/Amber/CV')); ?>" enctype="multipart/form-data">
     <div class="form-group">
       <label for="name-input">Linkerkant</label>
       <input type="text" class="form-control" name="leftSide" id="title-input" placeholder="Titel">
@@ -24,13 +24,15 @@
       <input type="text" class="form-control" name="rightSide" id="description-input" placeholder="Description">
       <label for="name-input">Categorie</label>
       <select class="form-control" name="category_id">
-          @foreach($categories as $category)
-            <option value={{$category->id}}>{{$category->categoryName}}</option>
-          @endforeach
+          <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+            <option value=<?php echo e($category->id); ?>><?php echo e($category->categoryName); ?></option>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
       </select>
-      <input type="hidden" name="_token" value="{{csrf_token()}}">
+      <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
     </div>
     <button type="submit" class="btn btn-lg">Save</button>
   </form>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

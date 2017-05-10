@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
 
 
-        <!-- colorbox -->
-        <!-- <script src="../js/jquery.colorbox-min.js"></script> -->
-        <!-- <link rel="stylesheet" href="../css/colorbox.css" /> -->
-
         <!-- agendafragments includes -->
         <!-- <script type="text/javascript" src="../js/jquery.min.1.7.js"></script> -->
 

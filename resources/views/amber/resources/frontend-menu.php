@@ -1,15 +1,15 @@
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-default navbar-static-top" style="height: 100px;">
+  <div class="container-fluid" style="height: 100%;">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header" style="height: 100%;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="font-family: courier" href="/">
-          <h1>Amber Rozema</h1>
+      <a class="navbar-brand animated fadeInRight" style="font-family: courier; " href="/">
+          <h1 style="padding: 0; margin: 0;">Amber Rozema</h1>
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->

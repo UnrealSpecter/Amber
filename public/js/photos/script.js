@@ -21,4 +21,21 @@ $(document).ready(function(){
         offset: 300
     });
 
+    $('.img-wrapper > img').hover(
+        function(){
+            var img = $(this);
+            var fotoblogTitle = img.parent().prev().find('.fotoblog-tekst');
+            var fotoblogDate = img.parent().prev().find('.fotoblog-date');
+            fotoblogTitle.removeClass('fadeInLeft').addClass('fadeOutLeft');
+            fotoblogDate.removeClass('fadeInDown').addClass('fadeOutUp');
+        },
+        function(){
+            var img = $(this);
+            var fotoblogTitle = img.parent().prev().find('.fotoblog-tekst');
+            var fotoblogDate = img.parent().prev().find('.fotoblog-date');
+            fotoblogTitle.removeClass('fadeOutLeft').addClass('fadeInLeft');
+            fotoblogDate.removeClass('fadeOutUp').addClass('fadeInDown');
+        }
+    );
+
 });

@@ -1,6 +1,6 @@
 @extends('layout')
-@include('amber.resources.menu')
 @section('content')
+@include('amber.resources.menu')
 	<h1> Edit Performance entry </h1>
 	<form method="POST" action="{{URL::to('/Amber/CV')}}/{{$cvEntry->id}}" enctype="multipart/form-data">
 		<div class="form-group">

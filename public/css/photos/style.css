@@ -1,18 +1,132 @@
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .fotoblog-date {
+        height: 25%;
+    }
+    .fotoblog-tekst > h1 {
+        font-size: 60px;
+    }
+    .fotoblog-tekst > h3 {
+        font-size: 30px;
+    }
+    .date-info-wrapper > h1 {
+        font-size: 30px;
+    }
+    .date-info-wrapper > h3 {
+        font-size: 23px;
+    }
+    .photo-wrapper {
+        margin: 0 0 5% 0;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fotoblog-date {
+        height: 25%;
+    }
+    .fotoblog-tekst > h1 {
+        font-size: 48px;
+    }
+    .fotoblog-tekst > h3 {
+        font-size: 24px;
+    }
+    .date-info-wrapper > h1 {
+        font-size: 40px;
+    }
+    .date-info-wrapper > h3 {
+        font-size: 20px;
+    }
+    .photo-wrapper {
+        margin: 0 0 2.5% 0;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .fotoblog-date {
+        height: 30%;
+    }
+    .fotoblog-tekst > h1 {
+        font-size: 36px;
+    }
+    .fotoblog-tekst > h3 {
+        font-size: 18px;
+    }
+    .date-info-wrapper > h1 {
+        font-size: 32px;
+    }
+    .date-info-wrapper > h3 {
+        font-size: 16px;
+    }
+    .photo-wrapper {
+        margin: 0 0 0 0;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .fotoblog-date {
+        height: 40%;
+    }
+    .fotoblog-tekst > h1 {
+        font-size: 24px;
+    }
+    .fotoblog-tekst > h3 {
+        font-size: 12px;
+    }
+    .date-info-wrapper > h1 {
+        font-size: 24px;
+    }
+    .date-info-wrapper > h3 {
+        font-size: 12px;
+    }
+    .photo-wrapper {
+        margin: 0 0 0 0;
+    }
+}
+
+/* main wrapper around everything */
 .photo-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background: blue;*/
-    margin: 0;
     padding: 0;
 }
 
-.fotoblog {
-    /*width: 100%;*/
-    /*position: absolute;*/
-    /*left: 12.5%;*/
-    /*height: 100%;*/
+/*start info wrapper which is seperate from the img */
+.fotoblog-tekst {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.fotoblog-tekst > h1, .fotoblog-tekst > h3, .fotoblog-tekst > hr {
+    color: white;
+    z-index: 2;
+}
+
+.info-wrapper {
+    z-index: 3;
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
     height: 100%;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    pointer-events: none;
+}
+
+.info-wrapper > hr {
+    width: 75%;
+    margin: 0;
+    padding: 0;
 }
 
 .info-background {
@@ -45,8 +159,19 @@
     text-align: center;
 }
 
-.info-wrapper > hr {
-    width: 75%;
-    margin: 0;
+/* img stuff for blog */
+.img-wrapper {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.img-wrapper > img {
     padding: 0;
+}
+
+.fotoblog {
+    height: 100%;
 }

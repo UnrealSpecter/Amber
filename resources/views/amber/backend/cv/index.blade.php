@@ -1,6 +1,6 @@
 @extends('layout')
-@include('amber.resources.menu')
 @section('content')
+@include('amber.resources.menu')
 @include('amber.resources.cv-submenu')
   @foreach ($categories as $category)
       <h1>{{$category->categoryName}}</h1>
