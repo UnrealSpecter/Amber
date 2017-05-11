@@ -51,7 +51,3 @@ yepnope({
 </script>
 
 @endsection
-
-
-
-

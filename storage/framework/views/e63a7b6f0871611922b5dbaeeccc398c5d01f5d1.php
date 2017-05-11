@@ -1,6 +1,6 @@
 
-<?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 	<h1> Edit Category </h1>
 	<form method="POST" action="<?php echo e(URL::to('/Amber/CV/categories')); ?>/<?php echo e($category->id); ?>" enctype="multipart/form-data">
 		<div class="form-group">

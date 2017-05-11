@@ -1,10 +1,10 @@
-@extends('layout')
-@section('content')
-@include('amber.resources.menu')
-@include('amber.resources.performances-submenu')
+
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('amber.resources.performances-submenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <div class="col-lg-8 col-lg-offset-2" style="margin-top: 25px;">
         <h1> New Fotoblog entry </h1>
-        <form method="POST" action="{{URL::to('/Amber/performances')}}" enctype="multipart/form-data">
+        <form method="POST" action="<?php echo e(URL::to('/Amber/performances')); ?>" enctype="multipart/form-data">
           <div class="form-group">
             <label for="name-input">Naam</label>
             <input type="text" class="form-control" name="name" id="title-input" placeholder="Titel">
@@ -15,9 +15,11 @@
             <label class="control-label" for="date">Datum van optreden</label>
             <input class="form-control" id="date" name="performanceDate" placeholder="YYYY-MM-DD" type="text"/>
 
-            <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
           </div>
           <button type="submit" class="btn btn-lg">Save</button>
         </form>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

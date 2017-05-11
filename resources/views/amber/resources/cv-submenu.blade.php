@@ -1,24 +1,21 @@
- <nav class="navbar navbar-default navbar-static-top" style="height: 100px;">
-    <div class="container-fluid" style="height: 100%;">
+ <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header" style="height: 100%;">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" style="display: flex; align-items: center; justify-content: center;" href="/Amber/CV">{{ $nav->brand }}Curriculum-Vitae Overview</a>
+        <a class="navbar-brand" href="/Amber/CV">Curriculum-Vitae Overview</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            @foreach($nav as $link)
-                <li class="active"><a href="/Amber/CV">Overview</a></li>
-            @endforeach
-          <!-- <li class="active"><a href="/Amber/CV">Overview</a></li>
+          <li class="active"><a href="/Amber/CV">Overview</a></li>
           <li><a href="/Amber/CV/create">Create CV Entry</a></li>
-          <li><a href="/Amber/CV/categories/create">Create CV Category</a></li> -->
+          <li><a href="/Amber/CV/categories/create">Create CV Category</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

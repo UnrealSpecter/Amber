@@ -13,13 +13,7 @@ class CVController extends Controller
 {
     public function index(){
         $categories = CVCategory::with('entries')->get();
-        $nav = [
-            'brand' => 'Curriculum Vitae Overview',
-            'active' => 'Overview',
-            'menu-links' => [
-                ''
-            ]
-        ]
+
         return view('amber.backend.cv.index', compact($categories, 'categories'));
     }
 

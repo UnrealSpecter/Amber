@@ -8,7 +8,7 @@
         <title>Laravel</title>
 
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/bootstrap.min.css') }}">
-        <!-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}"> -->
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/animate.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/style.css') }}">
     	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/nav-style.css')}}"/>
@@ -17,6 +17,7 @@
         <!-- jQuery -->
         <script type="text/javascript" src="{{ URL::asset('js/global/jquery-3.1.1.min.js')}}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/global/modernizr.2.5.3.min.js') }}"></script>
+        <!-- <script type="text/javascript" src="../js/jquery.min.1.7.js"></script> -->
         @yield('js')
 
         <!-- Bootstrap Date-Picker Plugin -->

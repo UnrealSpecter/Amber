@@ -1,8 +1,8 @@
 @extends('layout')
-@include('amber.resources.menu')
 @section('content')
+@include('amber.resources.menu')
 @include('amber.resources.agenda-fragments-submenu')
-	
+
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">
@@ -53,7 +53,3 @@ yepnope({
 </script>
 
 @endsection
-
-
-
-

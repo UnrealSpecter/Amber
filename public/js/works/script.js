@@ -1,13 +1,25 @@
 $(document).ready(function(){
 
-    $("#works-gallery").justifiedGallery({
-        rowHeight : 300,
-        maxRowHeight: 400,
-        lastRow : 'nojustify',
-        margins : 3
-    }).on('jg.complete', function () {
-        $('.swipebox').swipebox();
-    });
+    if($("#works-gallery")){
+        $("#works-gallery").justifiedGallery({
+            rowHeight : 300,
+            maxRowHeight: 400,
+            lastRow : 'nojustify',
+            margins : 3
+        }).on('jg.complete', function () {
+            $('.swipebox').swipebox();
+        });
+    }
+
+    if($('#works-backend-gallery')){
+        $("#works-backend-gallery").justifiedGallery({
+            rowHeight : 300,
+            maxRowHeight: 400,
+            lastRow : 'nojustify',
+            margins : 3
+        });
+    }
+
 
     //loop categories and store them in the array for use
     var works = [];

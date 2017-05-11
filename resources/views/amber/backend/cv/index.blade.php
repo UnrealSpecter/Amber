@@ -2,7 +2,8 @@
 @section('content')
 @include('amber.resources.menu')
 @include('amber.resources.cv-submenu')
-  @foreach ($categories as $category)
+    <div class="col-lg-8 col-lg-offset-2" style="margin-top: 25px;">
+    @foreach ($categories as $category)
       <h1>{{$category->categoryName}}</h1>
       <a class="btn btn-small btn-info" href="{{ URL::to('Amber/CV/categories/' . $category->id . '/edit')}}">Edit</a>
       {{ Form::open(['method' => 'DELETE', 'route' => ['categories.destroy', $category->id]])}}
@@ -25,9 +26,8 @@
                     {{ Form::close() }}
                 </span>
             </div>
-
         </div>
       @endforeach
-  @endforeach
-
+    @endforeach
+    </div>
 @endsection
