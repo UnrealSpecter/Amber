@@ -37,3 +37,23 @@
         font-size: 12px;
     }
 }
+
+.cv {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.category-name {
+    font-weight: bold;
+    color:#77aaff;
+}
+
+.entry-left {
+    color: white;
+}
+
+.entry-right {
+    color: white;
+    font-style: italic;
+}
