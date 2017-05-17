@@ -16,25 +16,20 @@ $(document).ready(function(){
         offset: 300
     });
 
-    $('.performance').addClass("hideme").viewportChecker({
-        classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-        offset: 300
-    });
-
     $('.img-wrapper > img').hover(
         function(){
             var img = $(this);
             var fotoblogTitle = img.parent().prev().find('.fotoblog-tekst');
             var fotoblogDate = img.parent().prev().find('.fotoblog-date');
-            fotoblogTitle.removeClass('fadeInLeft').addClass('fadeOutLeft');
-            fotoblogDate.removeClass('fadeInDown').addClass('fadeOutUp');
+            fotoblogTitle.removeClass('fadeOutLeft').addClass('fadeInLeft');
+            fotoblogDate.removeClass('fadeOutDown').addClass('fadeInUp');
         },
         function(){
             var img = $(this);
             var fotoblogTitle = img.parent().prev().find('.fotoblog-tekst');
             var fotoblogDate = img.parent().prev().find('.fotoblog-date');
-            fotoblogTitle.removeClass('fadeOutLeft').addClass('fadeInLeft');
-            fotoblogDate.removeClass('fadeOutUp').addClass('fadeInDown');
+            fotoblogTitle.removeClass('fadeInLeft').addClass('fadeOutLeft');
+            fotoblogDate.removeClass('fadeInUp').addClass('fadeOutDown');
         }
     );
 
