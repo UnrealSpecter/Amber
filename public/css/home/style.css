@@ -1,0 +1,81 @@
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .social-media {
+        height: 200px;
+    }
+    .social-media > div > p {
+        font-size: 1.75vw;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .social-media {
+        height: 200px;
+    }
+    .social-media > div > p {
+        font-size: 5vw;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .social-media {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    .social-media > div > p {
+        font-size: 5vw;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .social-media {
+        height: 100px;
+    }
+    .social-media-icons > a {
+        margin-bottom: 20px;
+    }
+    .social-media > div > p {
+        font-size: 5vw;
+    }
+}
+
+
+.container {
+    background-color: black;
+}
+
+.social-media {
+    background-color: black;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.social-media > div  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.social-media > div > a {
+    height: 100%;
+}
+
+.social-media > div > a > img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media > div > p {
+    font-family: Courier;
+    color: #fe8081;
+    font-weight: bold;
+    /*font-size: 2.5vw;*/
+}
