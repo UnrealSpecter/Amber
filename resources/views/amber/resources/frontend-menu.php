@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right animated fadeInDown">
         <li><a href="/">HOME</a></li>
-        <li><a href="/works">WORKS</a></li>
         <li><a href="/performances">THEATRE</a></li>
+        <li><a href="/works">MY WORKS</a></li>
+        <li><a href="/photos">PHOTOGRAPHY</a></li>
         <li><a href="/cv">CURRICULUM VITAE</a></li>
-        <li><a href="/photos">BLOG</a></li>
         <li><a href="/agendafragments">DIARY FRAGMENTS</a></li>
         <li><a href="https://www.instagram.com/ambernynkeanna/">INSTAGRAM</a></li>
         <li><a href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a></li>

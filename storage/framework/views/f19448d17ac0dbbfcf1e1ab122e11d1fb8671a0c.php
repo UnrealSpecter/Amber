@@ -1,4 +1,3 @@
-
 <?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="flipbook-viewport">
