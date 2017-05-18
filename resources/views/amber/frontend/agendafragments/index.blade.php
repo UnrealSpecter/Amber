@@ -8,7 +8,7 @@
 				<div style="background-image:url('/uploads/agendafragments/{{$agendafragment->imagepath}}')"></div>
 			@endforeach
 			<!-- <div style="background-image:url(https://pbs.twimg.com/media/CQyQbkiUcAEhoQl.jpg)"></div>
-			<div style="background-image:url(http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large)"></div>
+			<div class="kappa" style="background-image:url(http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large)"></div>
 			<div style="background-image:url(https://i.ytimg.com/vi/pDgM1ug0wVQ/maxresdefault.jpg)"></div>
 			<div style="background-image:url(http://p2.i.ntere.st/0fa87ebd7b66b5f7aa6baa24b6fdacb5_480.jpg)"></div>
 			<div style="background-image:url(https://i.gyazo.com/88d02d711b1be8733bcb52d5050c5457.png)"></div>
@@ -24,6 +24,9 @@
 </div>
 
 <script type="text/javascript">
+	$('.kappa').click(function(){
+		alert();
+	});
 function loadApp() {
 	// Create the flipbook
 	$('.flipbook').turn({

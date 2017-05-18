@@ -84,6 +84,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="<?php echo e(URL::asset('/global/app.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('js/global/app.js')); ?>"></script>
 </body>
 </html>
