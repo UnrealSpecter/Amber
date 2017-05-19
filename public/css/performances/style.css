@@ -1,3 +1,21 @@
+.next-performance {
+    height: 750px;
+}
+
+.performances {
+    height: 600px;
+    margin: 50px 0 50px 0;
+}
+
+.sub-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+
+
 .performance-description-container {
     position: relative;
     left: 0;
@@ -13,8 +31,14 @@
     margin-bottom: 50px;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
 .performance-main {
-    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,4 +76,59 @@
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.performance-description-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+}
+
+.performance-description-block {
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.description {
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    font-family: courier;
+    font-size: 1vw;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-button-container {
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+}
+.youtube-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: solid black 1px;
+    color: white;
+    font-family: courier;
+    font-size: 1.5em;
+    padding: 20px;
+
+}
+
+.youtube-button:hover {
+    text-decoration: none;
+    color: white;
 }

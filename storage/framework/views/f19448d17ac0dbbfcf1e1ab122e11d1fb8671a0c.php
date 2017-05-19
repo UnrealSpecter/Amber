@@ -4,17 +4,11 @@
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">
-			<!-- <?php $__currentLoopData = $agendafragments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agendafragment): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+			<?php $__currentLoopData = $agendafragments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agendafragment): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
 				<div style="background-image:url('/uploads/agendafragments/<?php echo e($agendafragment->imagepath); ?>')"></div>
-			<?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?> -->
-			<div style="background-image:url(https://pbs.twimg.com/media/CQyQbkiUcAEhoQl.jpg)"></div>
-			<div class="kappa" style="background-image:url(http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large)"><a href="http://google.com">google</a>
-			<a href="http://google.com">google</a>
-		<a href="http://google.com">google</a>
-	<a href="http://google.com">google</a>
-<a href="http://google.com">google</a>
-
-<a href="http://google.com">google</a></div>
+			<?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+			<!-- <div style="background-image:url(https://pbs.twimg.com/media/CQyQbkiUcAEhoQl.jpg)"></div>
+			<div class="kappa" style="background-image:url(http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large)"></div>
 			<div style="background-image:url(https://i.ytimg.com/vi/pDgM1ug0wVQ/maxresdefault.jpg)"></div>
 			<div style="background-image:url(http://p2.i.ntere.st/0fa87ebd7b66b5f7aa6baa24b6fdacb5_480.jpg)"></div>
 			<div style="background-image:url(https://i.gyazo.com/88d02d711b1be8733bcb52d5050c5457.png)"></div>
@@ -24,7 +18,7 @@
 			<div style="background-image:url(https://static-cdn.jtvnw.net/emoticons/v1/4339/3.0)"></div>
 			<div style="background-image:url(https://static-cdn.jtvnw.net/emoticons/v1/55338/3.0)"></div>
 			<div style="background-image:url(https://static-cdn.jtvnw.net/emoticons/v1/93064/3.0)"></div>
-			<div style="background-image:url(http://static.tumblr.com/b6e1cf0f096282785050ff2f77e49d6a/smihjlx/FHgmwwb2u/tumblr_static_kappa.gif)"></div>
+			<div style="background-image:url(http://static.tumblr.com/b6e1cf0f096282785050ff2f77e49d6a/smihjlx/FHgmwwb2u/tumblr_static_kappa.gif)"></div> -->
 		</div>
 	</div>
 </div>

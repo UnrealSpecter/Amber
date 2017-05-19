@@ -32,21 +32,28 @@
 
 	</div>
 	<?php else: ?>
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 performance animated fadeInDown" style="margin-bottom: 5px;">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 performance animated fadeInDown" style="margin-bottom: 5px; height: 600px;">
 
-		<div class="col-lg-6 col-lg-offset-3 performance-description-container" style="position: absolute; left: 0; top: 0; height: 100%; background-color: white;">
-		  	<div class="row" style="height: 100%;">
-		  		<div class="col-lg-12 performance-description-block hidden" style="background: blue; height: 100%; z-index: -1;">
-					<h1 style="color: white; line-height: 250px;" class=""><?php echo e($performance->description); ?></h1>
+		 <div class="col-lg-6 col-lg-offset-3 main-description sub-container invisible">
+	  		<div class="col-lg-12 performance-description-block">
+				<div class="youtube-button-container col-lg-12">
+					<h1 style="color: white; font-family: courier;" class=""><?php echo e($performance->name); ?></h1>
 				</div>
-		  	</div>
+				<div class="col-lg-12 description"><?php echo e($performance->description); ?></div>
+				<div class="youtube-button-container col-lg-12">
+					<a class="youtube-button" target="_blank" href="https://google.com">BEKIJK DE VIDEO</a>
+				</div>
+			</div>
 		</div>
 
-		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 text-center performance-main" style="height: 600px;">
+		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 short-description sub-container insivible">
 			<h1 class='text-center'><?php echo e($performance->name); ?></h1>
 			<h1 class="performance-date"><?php echo e(date('d F Y', strtotime($performance->performanceDate))); ?></h2>
+		</div>
+
+		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 sub-container">
 			<div class="shadow"></div>
-			<img class="img-responsive"  src="/uploads/<?php echo e($performance->mediaItem); ?>" alt="<?php echo e($performance->name); ?>">
+			<img class="img-responsive" src="/uploads/<?php echo e($performance->mediaItem); ?>" alt="<?php echo e($performance->name); ?>">
 		</div>
 
 	</div>
