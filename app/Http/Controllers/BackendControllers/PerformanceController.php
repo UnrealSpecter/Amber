@@ -7,15 +7,17 @@ use App\Http\Requests;
 use DB;
 use App\Models\Performance;
 use Illuminate\Routing\Redirector;
-
+use Carbon\Carbon;
 
 use \Input as Input;
 
 
 class PerformanceController extends Controller
 {
-    public function index(){
+
+    public function index() {
         $performances = Performance::all();
+        $performances = Performance::orderBy('performanceDate', 'desc')->get();
         return view('amber.backend.performances.index', compact($performances, 'performances'));
     }
 
@@ -25,6 +27,14 @@ class PerformanceController extends Controller
 
     public function store(Request $request){
         $performance = Performance::create($request->all());
+
+        //get youtube id
+        if($request->video){
+            $parts = parse_url($request->video);
+            parse_str($parts['query'], $query);
+            $youtubeId = $query['v'];
+            $performance->video = $youtubeId;
+        }
 
         $image = $request->file('mediaItem');
         if($image->move(public_path("/uploads"), $image->getClientOriginalname())){
@@ -43,10 +53,19 @@ class PerformanceController extends Controller
     }
 
     public function update($id, Request $request){
+
         // perform update
         $performance = Performance::findOrFail($id);
 
         $performance = $performance->update($request->all());
+
+        //youtube link stuff
+        if($request->video){
+            $parts = parse_url($request->video);
+            parse_str($parts['query'], $query);
+            $youtubeId = $query['v'];
+            $performance->video = $youtubeId;
+        }
 
         $image = $request->file('mediaItem');
         // if new image has been uploaded, save it, otherwise ignore.

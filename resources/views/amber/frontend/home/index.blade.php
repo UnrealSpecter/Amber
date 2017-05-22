@@ -18,13 +18,16 @@
 				<p>amberrozema@gmail.com</p>
 			</div>
 			<div class="col-lg-4 social-media-icons">
-				<a target="_blank" href="http://www.facebook.com/amberrozema" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<a target="_blank" href="http://www.facebook.com/amberrozema" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<img src="{{ URL::asset('/images/home/facebook.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
-				<a target="_blank" href="https://www.instagram.com/ambernynkeanna/" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<a target="_blank" href="http://www.amberrozema.tumblr.com" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img src="{{ URL::asset('/images/home/tumblr.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/ambernynkeanna/" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<img src="{{ URL::asset('/images/home/instagram.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
-				<a target="_blank" href="http://www.facebook.com/amberrozema" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<a target="_blank" href="https://m.youtube.com/channel/UCRvB5HXlJcjmhM2ckm_S5Tg" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<img src="{{ URL::asset('/images/home/youtube.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 			</div>

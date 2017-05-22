@@ -6,7 +6,8 @@
 }
 
 body {
-    background: url('../../uploads/background-1.jpg');
+    /*background: url('../../uploads/background-1.jpg');*/
+    background-color: black;
 }
 
 @font-face {

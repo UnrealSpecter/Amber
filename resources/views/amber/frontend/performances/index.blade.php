@@ -56,6 +56,12 @@
 			<img class="img-responsive" src="/uploads/{{$performance->mediaItem}}" alt="{{$performance->name}}">
 		</div>
 
+		@if($performance->video)
+		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 sub-container">
+			<div class="performance-video" style="height: 100%; width: 100%; background-color: red;"></div>
+		</div>
+		@endif
+
 	</div>
 	@endif
 	@endforeach

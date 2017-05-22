@@ -18,6 +18,7 @@ class CreatePerformancesTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('mediaItem');
+            $table->string('video')->nullable();
             $table->date('performanceDate');
             $table->timestamps();
         });

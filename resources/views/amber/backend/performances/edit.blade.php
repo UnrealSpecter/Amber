@@ -10,7 +10,9 @@
 			  <input type="text" class="form-control" name="name" id="title-input" placeholder="Titel" value="{{$performance->name}}">
 			  <label for="name-input">Description</label>
 			  <input type="text" class="form-control" name="description" id="description-input" placeholder="Description" value="{{$performance->description}}">
-			  <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}"/>
+              <label for="name-input">Video</label>
+              <input class="form-control" name="video" type="text" value="{{ $performance->video }}" placeholder="Performance youtube url">
+              <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}"/>
 			  <input type="file" name='mediaItem' id='file'>
 
 	          <label class="control-label" for="date">Datum van optreden</label>
