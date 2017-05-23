@@ -21,21 +21,36 @@ $(document).ready(function(){
             scrollTop: $(".next-performance").offset().top
         }, 2000);
 
-    //on hover show the description with an animation
-    $('.perfomance-main').hover(
-        function() {
-            var performance = $(this).siblings('.performance-description-container').find('.performance-description-block');
-            if(performance.hasClass('hidden')){
-                performance.removeClass('hidden');
-            }
-            performance.removeClass('animated slideOutLeft');
-            performance.addClass('animated slideInRight');
-        },
-        function() {
-            var performance = $(this).siblings('.performance-description-container').find('.performance-description-block');
-            performance.removeClass('animated slideInRight');
-            performance.addClass('animated slideOutLeft');
-        }
-    );
+    //on click show the main description
+    $('.meer-button').click(function(){
+        var shortDescription = $(this).parent().parent();
+        var mainDescription = shortDescription.siblings('.main-description');
+        shortDescription.addClass('animated fadeOut');
+        setTimeout(function () {
+            shortDescription.addClass('hidden').removeClass('animated fadeOut');
+            mainDescription.removeClass('invisible animated fadeOut fadeIn hidden').addClass('animated fadeIn');
+        }, 750);
+    });
+
+    //on click show the video
+    $('.youtube-button').click(function(){
+        var mainDescription = $(this).parent().parent().parent();
+        var videoContainer = mainDescription.siblings('.video-container');
+        mainDescription.addClass('animated fadeOut');
+        setTimeout(function () {
+            mainDescription.removeClass('animated fadeOut').addClass('hidden');
+            videoContainer.removeClass('invisible hidden fadeOut fadeIn').addClass('animated fadeIn');
+        }, 750);
+    });
+
+    $('.terug-button').click(function(){
+        var videoContainer = $(this).parent().parent();
+        var shortDescription = videoContainer.siblings('.short-description');
+        videoContainer.addClass('animated fadeOut');
+        setTimeout(function () {
+            shortDescription.removeClass('animated fadeOut hidden').addClass('animated fadeIn');
+            videoContainer.addClass('hidden');
+        }, 750);
+    });
 
 });

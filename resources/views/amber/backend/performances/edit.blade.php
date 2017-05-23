@@ -9,9 +9,9 @@
 			  <label for="name-input">Titel</label>
 			  <input type="text" class="form-control" name="name" id="title-input" placeholder="Titel" value="{{$performance->name}}">
 			  <label for="name-input">Description</label>
-			  <input type="text" class="form-control" name="description" id="description-input" placeholder="Description" value="{{$performance->description}}">
+              <textarea name="description" id="description-input" class="form-control" rows="4" cols="50" placeholder="Description">{{$performance->description}}</textarea>
               <label for="name-input">Video</label>
-              <input class="form-control" name="video" type="text" value="{{ $performance->video }}" placeholder="Performance youtube url">
+              <input class="form-control" name="video" type="text" value="https://www.youtube.com/watch?v={{ $performance->video }}" placeholder="Performance youtube url">
               <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}"/>
 			  <input type="file" name='mediaItem' id='file'>
 

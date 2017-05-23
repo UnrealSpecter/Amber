@@ -1,5 +1,12 @@
-<?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" href="<?php echo e(URL::asset('css/agendafragments/style.css')); ?>"/>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+	<script src="<?php echo e(URL::asset('js/agendafragments/script.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('amber.resources.frontend-menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">
@@ -23,33 +30,6 @@
 </div>
 
 <script type="text/javascript">
-	$('.kappa').click(function(){
-		alert();
-	});
-function loadApp() {
-	// Create the flipbook
-	$('.flipbook').turn({
-			// Width
-			width:922,
-			// Height
-			height:600,
-			// Elevation
-			elevation: 50,
-			// Enable gradients
-			gradients: true,
-			// Auto center this flipbook
-			autoCenter: true
-	});
-}
-
-// Load the HTML4 version if there's not CSS transform
-yepnope({
-	test : Modernizr.csstransforms,
-	yep: ['../js/turn.js'],
-	nope: ['../js/turn.html4.min.js'],
-	both: ['../css/basic.css'],
-	complete: loadApp
-});
 </script>
 
 <?php $__env->stopSection(); ?>

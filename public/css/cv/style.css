@@ -38,6 +38,10 @@
     }
 }
 
+body {
+    background: url('../../uploads/background-1.jpg');    
+}
+
 .cv {
     display: flex;
     align-items: center;

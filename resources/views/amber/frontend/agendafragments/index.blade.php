@@ -1,6 +1,12 @@
+@section('css')
+	<link rel="stylesheet" href="{{ URL::asset('css/agendafragments/style.css')}}"/>
+@endsection
+@section('js')
+	<script src="{{ URL::asset('js/agendafragments/script.js') }}"></script>
+@endsection
 @extends('layout')
-@include('amber.resources.frontend-menu')
 @section('content')
+@include('amber.resources.frontend-menu')
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">
@@ -24,33 +30,6 @@
 </div>
 
 <script type="text/javascript">
-	$('.kappa').click(function(){
-		alert();
-	});
-function loadApp() {
-	// Create the flipbook
-	$('.flipbook').turn({
-			// Width
-			width:922,
-			// Height
-			height:600,
-			// Elevation
-			elevation: 50,
-			// Enable gradients
-			gradients: true,
-			// Auto center this flipbook
-			autoCenter: true
-	});
-}
-
-// Load the HTML4 version if there's not CSS transform
-yepnope({
-	test : Modernizr.csstransforms,
-	yep: ['../js/turn.js'],
-	nope: ['../js/turn.html4.min.js'],
-	both: ['../css/basic.css'],
-	complete: loadApp
-});
 </script>
 
 @endsection

@@ -16,7 +16,7 @@ class CreatePerformancesTable extends Migration
         Schema::create('performances', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
+            $table->longtext('description');
             $table->string('mediaItem');
             $table->string('video')->nullable();
             $table->date('performanceDate');

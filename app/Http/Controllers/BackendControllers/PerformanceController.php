@@ -57,7 +57,7 @@ class PerformanceController extends Controller
         // perform update
         $performance = Performance::findOrFail($id);
 
-        $performance = $performance->update($request->all());
+        $performance->update($request->all());
 
         //youtube link stuff
         if($request->video){
@@ -78,8 +78,9 @@ class PerformanceController extends Controller
                 $performance->mediaItem = $image->getClientOriginalname();
             }
 
-            $performance->save();
         }
+        
+        $performance->save();
 
         return redirect()->route('performances.index');
     }
