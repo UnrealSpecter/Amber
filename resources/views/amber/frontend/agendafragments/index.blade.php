@@ -2,6 +2,7 @@
 	<link rel="stylesheet" href="{{ URL::asset('css/agendafragments/style.css')}}"/>
 @endsection
 @section('js')
+ 
 	<script src="{{ URL::asset('js/agendafragments/script.js') }}"></script>
 @endsection
 @extends('layout')

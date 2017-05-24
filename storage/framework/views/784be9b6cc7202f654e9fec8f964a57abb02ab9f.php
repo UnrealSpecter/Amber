@@ -1,3 +1,10 @@
+<?php $__env->startSection('css'); ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/home/style.css')); ?>">
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(URL::asset('global/js/jquery.min.1.7.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php echo $__env->make('amber.resources.agenda-fragments-submenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

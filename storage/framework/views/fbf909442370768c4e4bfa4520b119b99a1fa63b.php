@@ -10,7 +10,11 @@
 			  <label for="name-input">Description</label>
               <textarea name="description" id="description-input" class="form-control" rows="4" cols="50" placeholder="Description"><?php echo e($performance->description); ?></textarea>
               <label for="name-input">Video</label>
+              <?php if($performance->video): ?>
               <input class="form-control" name="video" type="text" value="https://www.youtube.com/watch?v=<?php echo e($performance->video); ?>" placeholder="Performance youtube url">
+              <?php else: ?>
+              <input class="form-control" name="video" type="text" value="" placeholder="Performance youtube url">
+              <?php endif; ?>
               <img class="img-responsive" src="/uploads/<?php echo e($performance->mediaItem); ?>"/>
 			  <input type="file" name='mediaItem' id='file'>
 

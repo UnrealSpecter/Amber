@@ -18,7 +18,7 @@
 				<p>amberrozema@gmail.com</p>
 			</div>
 			<div class="col-lg-4 social-media-icons">
-				<a target="_blank" href="http://www.facebook.com/amberrozema" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<a target="_blank" href="https://www.facebook.com/AmberRozemaArt/" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<img src="<?php echo e(URL::asset('/images/home/facebook.svg')); ?>" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 				<a target="_blank" href="http://www.amberrozema.tumblr.com" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -33,6 +33,9 @@
 			</div>
 			<div class="col-lg-4">
 				<p>+31(0)625274361</p>
+			</div>
+			<div class="col-lg-12" style="display: flex; align-items: center; height: 75px; justify-content: center;">
+				<a class="dhevak-link" target="_blank" href="http://dhevak.nl">WEBSITE BY DHEVAK</a>
 			</div>
 		</div>
 	</div>

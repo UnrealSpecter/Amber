@@ -19,11 +19,11 @@ Route::get('/home', 'HomeController@index');
 /* Front-end route groups for Amber's website */
 Route::group(['prefix'=>'/','as'=>'/'], function(){
     Route::get('/', 'FrontEndControllers\HomeController@index');
-    Route::get('/agendafragments', 'FrontEndControllers\AgendaFragmentController@index');
-    Route::get('/cv', 'FrontEndControllers\CVController@index');
-    Route::get('/photos', 'FrontEndControllers\PhotoController@index');
-    Route::get('/works', 'FrontEndControllers\WorkController@index');
-    Route::get('/performances', 'FrontEndControllers\PerformanceController@index');
+    Route::get('/diaryfragments', 'FrontEndControllers\AgendaFragmentController@index');
+    Route::get('/curriculumvitae', 'FrontEndControllers\CVController@index');
+    Route::get('/photography', 'FrontEndControllers\PhotoController@index');
+    Route::get('/myworks', 'FrontEndControllers\WorkController@index');
+    Route::get('/theatre', 'FrontEndControllers\PerformanceController@index');
 });
 
 /* Backend route groups for Amber's website */

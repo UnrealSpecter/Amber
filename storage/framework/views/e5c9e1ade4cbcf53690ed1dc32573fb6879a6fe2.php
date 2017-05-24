@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php echo $__env->make('amber.resources.performances-submenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -8,7 +9,7 @@
             <label for="name-input">Naam</label>
             <input type="text" class="form-control" name="name" id="title-input" placeholder="Titel">
             <label for="name-input">Omschrijving</label>
-            <input type="text" class="form-control" name="description" id="description-input" placeholder="Description">
+            <textarea name="description" id="description-input" class="form-control" rows="4" cols="50" placeholder="Description"></textarea>
             <label for="name-input">Video</label>
             <input class="form-control" name="video" type="text" placeholder="Performance youtube url">
             <label for="name-input">Image</label>

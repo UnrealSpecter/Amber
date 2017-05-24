@@ -1,8 +1,13 @@
+@section('css')
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/home/style.css') }}">
+@endsection
+@section('js')
+    <script src="{{ URL::asset('js/global/jquery.min.1.7.js') }}"></script>
+@endsection
 @extends('layout')
 @section('content')
 @include('amber.resources.menu')
 @include('amber.resources.agenda-fragments-submenu')
-
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">

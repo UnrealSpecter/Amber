@@ -54,6 +54,11 @@
     align-items: center;*/
 }
 
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
 .social-media > div  {
     height: 100%;
     display: flex;
@@ -74,8 +79,34 @@
 }
 
 .social-media > div > p {
-    font-family: Courier;
+    letter-spacing: 2px;
+    font-family: Georgia;
     color: #fe8081;
     font-weight: bold;
     /*font-size: 2.5vw;*/
+}
+
+.dhevak-reference {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dhevak-reference > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dhevak-link {
+    color: white;
+    font-size: 2em;
+    font-family: courier;
+}
+
+.dhevak-link:hover, .dhevak-link:visited {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -1,3 +1,7 @@
+body {
+    background: url('../../uploads/background-1.jpg');
+}
+
 .next-performance {
     height: 750px;
 }
@@ -68,7 +72,7 @@
 .performance-date {
     color: white;
     font-size: 3em;
-    font-family: courier
+    font-family: Georgia;
 }
 
 .performance-main > img {
@@ -112,7 +116,7 @@
     height: 100%;
     position: relative;
     padding: 20px;
-    font-family: courier;
+    font-family: Georgia;
     font-size: 1vw;
     color: white;
     overflow: hidden;
@@ -144,7 +148,7 @@
     background-color: black;
     border: solid black 1px;
     color: white;
-    font-family: courier;
+    font-family: Georgia;
     font-size: 1.5em;
     padding: 20px;
     cursor: pointer;

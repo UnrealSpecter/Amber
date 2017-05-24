@@ -12,22 +12,19 @@
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/animate.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/style.css') }}">
     	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/nav-style.css')}}"/>
+    	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/mobile-menu.css') }}">
         @yield('css')
 
         <!-- jQuery -->
         <script type="text/javascript" src="{{ URL::asset('js/global/jquery-3.1.1.min.js')}}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/global/modernizr.2.5.3.min.js') }}"></script>
-        <!-- <script type="text/javascript" src="../js/jquery.min.1.7.js"></script> -->
+        <script type="text/javascript" src="{{ URL::asset('js/global/mobile-menu.js')}}"></script>
         @yield('js')
 
         <!-- Bootstrap Date-Picker Plugin -->
         <!-- TODO do not load datepicker on every fucking page, you retard. -->
 <!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
-
-
-        <!-- agendafragments includes -->
-        <!-- <script type="text/javascript" src="../js/jquery.min.1.7.js"></script> -->
 
         <script>
             $(document).ready(function(){

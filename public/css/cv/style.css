@@ -39,7 +39,7 @@
 }
 
 body {
-    background: url('../../uploads/background-1.jpg');    
+    background: url('../../uploads/background-1.jpg');
 }
 
 .cv {
@@ -50,7 +50,7 @@ body {
 
 .category-name {
     font-weight: bold;
-    color:#77aaff;
+    color: #fe8081;
 }
 
 .entry-left {

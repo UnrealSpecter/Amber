@@ -2,6 +2,7 @@
 	<link rel="stylesheet" href="<?php echo e(URL::asset('css/agendafragments/style.css')); ?>"/>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js'); ?>
+ 
 	<script src="<?php echo e(URL::asset('js/agendafragments/script.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 

@@ -109,6 +109,7 @@
 .fotoblog-tekst > h1, .fotoblog-tekst > h3, .fotoblog-tekst > hr {
     color: white;
     z-index: 2;
+    text-align: center;
 }
 
 .info-wrapper {
@@ -130,7 +131,7 @@
 }
 
 .info-background {
-    background: red;
+    /*background-color: #fe8081;*/
     filter: alpha(opacity=30);
     -moz-opacity: 0.5;
     opacity: 0.5;

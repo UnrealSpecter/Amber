@@ -32,3 +32,21 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
 }
+
+.mobile-menu-bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 3px 0;
+    margin-right: 10px;
+}
+
+.open-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-family: courier;
+    cursor: pointer; 
+    color: white;
+}
