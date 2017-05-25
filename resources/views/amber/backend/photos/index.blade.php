@@ -15,7 +15,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 photo-wrapper">
 
     		<div class="info-wrapper">
-    			<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-0 fotoblog-tekst" style="height: 50%;">
+    			<div class="col-lg-4 col-md-4 col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-0 fotoblog-tekst" style="height: 50%;">
     				<div class="info-background"></div>
     				<h1>{{$fotoblog->title}}</h1>
     				@if(!empty($fotoblog->description))

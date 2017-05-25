@@ -11,8 +11,25 @@
 			<img class="animated fadeInUp" style="max-height: 100%; width: 100%;" src="/uploads/header.jpg" alt="amber-titelblad">
 		</div>
 		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="display: flex; align-items: center; justify-content: center; font-family: courier; color: white; font-size: 2em;">
+				Amber Nynke Anna Rozema (born 16th of December, 1997) is a visual artist, theatrical performer and storyteller from the Netherlands. Currently based in Maastricht where she studies at the Maastricht Academy of Performing Arts (Toneelacademie Maastricht). Mainly occupying herself with theatre. Alongside acting, performing and directing, she has also developed her drawing, painting, writing, photography and music composing skills. In her work, Amber combines all the formerly mentioned disciplines, since the stage is a place where they all come together.
+			</div>
+		</div>
+		<div class="row">
 			<img class="animated fadeInUp img-responsive col-lg-10 col-lg-offset-1" src="<?php echo e(URL::asset('/images/home/biografie.jpeg')); ?>" alt="amber-titelblad">
 		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="display: flex; align-items: center; justify-content: center; font-family: courier; color: white; font-size: 2em;">
+				Amber’s art works and photographs are for sale. These can be found on Amber’s Etsy account (The link can be found in the menu above). Besides, Amber can be hired for acting jobs, theatrical performances, spoken word performances, as a theatre maker and director of theatre projects. Also,  she makes photography portraits and other visual art jobs on-demand. Amber can be contacted by email and telephone (contact details below).
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="display: flex; align-items: center; justify-content: center; font-family: courier; color: white; font-size: 2em;">
+				"Always remember that the reason that you initially started working was that there was something inside yourself that you felt, that if you could manifest it in some way, you would understand more about yourself and how you coexist with the rest of society.”
+				 <br/> <br/> David Bowie, 1997: Bowie’s Advice to Artists 
+			</div>
+		</div>
+
 		<div class="row social-media">
 			<div class="col-lg-4">
 				<p>amberrozema@gmail.com</p>

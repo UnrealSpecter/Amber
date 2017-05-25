@@ -21,8 +21,19 @@ $(document).ready(function(){
     	test : Modernizr.csstransforms,
     	yep: ['../js/turn.js'],
     	nope: ['../js/turn.html4.min.js'],
-    	both: ['../css/basic.css'],
     	complete: loadApp
     });
+
+    // $('.ducky-container').hover(
+    //     function() {
+    //         alert();
+    //         $('.duck-one').addClass('invisible');
+    //         $('.duck-two').removeClass('invisible');
+    //     }, function() {
+    //         alert();
+    //         $('.duck-one').addClass('invisible');
+    //         $('.duck-two').removeClass('invisible');
+    //     }
+    // );
 
 });

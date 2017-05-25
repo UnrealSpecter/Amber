@@ -1,7 +1,7 @@
 /* large desktops and up ----------- */
 @media screen and (min-width: 1200px) {
     .navbar-default .navbar-nav>li>a {
-      font-size: 1.4vw;
+      font-size: 1.25vw;
     }
     .navbar-brand > h1{
         font-size: 2.3vw;
@@ -11,10 +11,10 @@
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-default .navbar-nav>li>a {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
     .navbar-brand > h1 {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
 
