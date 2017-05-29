@@ -26,7 +26,7 @@ class AgendaFragmentController extends Controller
         $agendafragment = new AgendaFragment;
         $image = $request->file('imagepath');
         //save orignal image to uploads
-        Image::make($image)->save(public_path('/uploads/agendafragments/') . $image->getClientOriginalname());
+        Image::make($image)->save(public_path('uploads/agendafragments/') . $image->getClientOriginalname());
         //save path
         $agendafragment->imagepath = $image->getClientOriginalname();
         //save work object
