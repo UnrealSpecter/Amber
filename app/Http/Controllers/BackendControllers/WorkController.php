@@ -24,7 +24,7 @@ class WorkController extends Controller
         $work = Work::create($request->all());
         $image = $request->file('imagepath');
         //save orignal image to uploads
-        Image::make($image)->save(public_path('/uploads/works/') . $image->getClientOriginalname());
+        Image::make($image)->save(public_path('uploads/works/') . $image->getClientOriginalname());
         //resize image to width
         $thumb = Image::make($image);
         $thumb->resize(300, null, function ($constraint) {
@@ -35,7 +35,7 @@ class WorkController extends Controller
             $constraint->aspectRatio();
         });
         //save thumb
-        $thumb->save(public_path('/uploads/works/thumbs/') . $image->getClientOriginalname());
+        $thumb->save(public_path('uploads/works/thumbs/') . $image->getClientOriginalname());
         //save path
         $work->imagepath = $image->getClientOriginalname();
         //save work object
