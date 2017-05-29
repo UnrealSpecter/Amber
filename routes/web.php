@@ -47,7 +47,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('/Amber/CV', 'BackendControllers\CVController', ['except' => ['show']]);
 
     Route::get('/Amber/bookerino', 'BackendControllers\BookController@index');
-    Route::resource('/Amber/agendafragments', 'BackendControllers\AgendafragmentController', ['except' => ['show']]);
+    Route::resource('/Amber/agendafragments', 'BackendControllers\AgendaFragmentController', ['except' => ['show']]);
 
     Route::resource('/Amber/CV/categories', 'BackendControllers\CVCategoryController', ['except' => ['index', 'show']]);
 });
