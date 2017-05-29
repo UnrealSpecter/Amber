@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<img class="animated fadeInUp img-responsive col-lg-10 col-lg-offset-1" src="{{ URL::asset('/images/home/biografie.jpeg')}}" alt="amber-titelblad">
+			<img class="animated fadeInUp img-responsive col-lg-10 col-lg-offset-1" src="{{ URL::asset('/images/Home/biografie.jpeg')}}" alt="amber-titelblad">
 		</div>
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="display: flex; align-items: center; justify-content: center; font-family: courier; color: white; font-size: 2em;">
@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="display: flex; align-items: center; justify-content: center; font-family: courier; color: white; font-size: 2em;">
 				"Always remember that the reason that you initially started working was that there was something inside yourself that you felt, that if you could manifest it in some way, you would understand more about yourself and how you coexist with the rest of society.”
-				 <br/> <br/> David Bowie, 1997: Bowie’s Advice to Artists 
+				 <br/> <br/> David Bowie, 1997: Bowie’s Advice to Artists
 			</div>
 		</div>
 
@@ -36,16 +36,16 @@
 			</div>
 			<div class="col-lg-4 social-media-icons">
 				<a target="_blank" href="https://www.facebook.com/AmberRozemaArt/" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<img src="{{ URL::asset('/images/home/facebook.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
+					<img src="{{ URL::asset('/images/Home/facebook.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 				<a target="_blank" href="http://www.amberrozema.tumblr.com" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<img src="{{ URL::asset('/images/home/tumblr.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
+					<img src="{{ URL::asset('/images/Home/tumblr.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 				<a target="_blank" href="https://www.instagram.com/ambernynkeanna/" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<img src="{{ URL::asset('/images/home/instagram.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
+					<img src="{{ URL::asset('/images/Home/instagram.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 				<a target="_blank" href="https://m.youtube.com/channel/UCRvB5HXlJcjmhM2ckm_S5Tg" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<img src="{{ URL::asset('/images/home/youtube.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
+					<img src="{{ URL::asset('/images/Home/youtube.svg') }}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
 				</a>
 			</div>
 			<div class="col-lg-4">
