@@ -10,7 +10,7 @@ use Illuminate\Routing\Redirector;
 
 use \Input as Input;
 
-class AgendafragmentController extends Controller
+class AgendaFragmentController extends Controller
 {
     public function index(){
     	$agendafragments = Agendafragment::all();
