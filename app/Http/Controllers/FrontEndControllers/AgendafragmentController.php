@@ -14,6 +14,6 @@ class AgendaFragmentController extends Controller
 {
     public function index(){
     	$agendafragments = Agendafragment::all();
-        return view('amber.frontend.agendafragments.index', compact($agendafragments, 'agendafragments'));
+        return view('amber.frontend.agendafragments.index', compact($agendafragments, 'agendafragments')); 
     }
 }
