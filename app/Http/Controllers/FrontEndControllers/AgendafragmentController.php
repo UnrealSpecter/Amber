@@ -12,7 +12,7 @@ use \Input as Input;
 class AgendaFragmentController extends Controller
 {
     public function index(){
-    	$agendafragments = Agendafragment::all();
+    	$agendafragments = AgendaFragment::all();
         return view('amber.frontend.agendafragments.index', compact($agendafragments, 'agendafragments'));
     }
 }
