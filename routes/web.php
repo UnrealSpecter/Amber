@@ -30,7 +30,7 @@ Route::group(['prefix'=>'/','as'=>'/'], function(){
 Route::group(['middleware' => 'auth'], function () {
 
 	// base dashboard route
-    Route::get('/Amber/dashboard', function () {
+    Route::get('/admin', function () {
     	return view('amber.backend.dashboard');
 	});
     Route::resource('/Amber/performances', 'BackendControllers\PerformanceController', ['except' => ['show']]);
