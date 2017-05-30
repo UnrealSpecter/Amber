@@ -12,6 +12,7 @@ class PhotoController extends Controller
 {
     public function index(){
         $fotoblogs = Fotoblog::all();
+        $fotoblogs = DB::table('fotoblogs')->orderBy('created_at', 'desc')->get();
         return view('amber.frontend.photos.index', compact($fotoblogs, 'fotoblogs'));
     }
 
