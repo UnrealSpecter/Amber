@@ -23,7 +23,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 						<h3 class="animated fadeInLeft text-left entry-left">{{$entry->leftSide}}</h3>
 					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-8">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 						<h3 class="animated fadeInRight text-left entry-right" >{{$entry->rightSide}}</h3>
 					</div>
 				</div>

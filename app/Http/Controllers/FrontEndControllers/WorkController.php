@@ -11,7 +11,7 @@ use \Input as Input;
 class WorkController extends Controller
 {
     public function index(){
-        $works = Work::all();
+        $works = DB::table('works')->orderBy('created_at', 'desc')->get();
         return view('amber.frontend.works.index', compact($works, 'works'));
     }
 }

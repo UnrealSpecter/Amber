@@ -11,7 +11,7 @@ use \Input as Input;
 class PhotoController extends Controller
 {
     public function index(){
-        $fotoblogs = Fotoblog::all();
+        $fotoblogs = DB::table('fotogblogs')->orderBy('created_at', 'desc')->get();
         return view('amber.backend.photos.index', compact($fotoblogs, 'fotoblogs'));
     }
 

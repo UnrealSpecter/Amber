@@ -1,5 +1,5 @@
 body {
-    background: url('../../uploads/background-1.jpg');
+    background: url('../../images/Performance/performance_background.jpg');
 }
 
 .next-performance {
@@ -148,7 +148,7 @@ body {
     background-color: black;
     border: solid black 1px;
     color: white;
-    font-family: Georgia;
+    font-family: courier;
     font-size: 1.5em;
     padding: 20px;
     cursor: pointer;

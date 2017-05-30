@@ -24,8 +24,8 @@
 	</div>
 
 	<div class="col-lg-3 col-md-3 hidden-sm hidden-xs ducky-container" style="position: fixed; right: 0; bottom: 0; height: 100%; z-index: 10;" >
-		<img class="duck-one img-responsive" style="position: absolute; bottom: 0; right: 0; z-index: 1;" src="{{ URL::asset('/images/Home/eendje_1.png')}}" alt="explainer duckling">
-		<img class="duck-two img-responsive " style="position: absolute; bottom: 0; right: 0; z-index: 0;" src="{{ URL::asset('/images/Home/eendje_2.png')}}" alt="explainer duckling">
+		<img class="duck-one img-responsive" style="position: absolute; bottom: 0; right: 0; z-index: 1;" src="{{ URL::asset('/images/Agenda/eendje_1.png')}}" alt="explainer duckling">
+		<img class="duck-two img-responsive " style="position: absolute; bottom: 0; right: 0; z-index: 0;" src="{{ URL::asset('/images/Agenda/eendje_2.png')}}" alt="explainer duckling">
 	</div>
 
 </div>
