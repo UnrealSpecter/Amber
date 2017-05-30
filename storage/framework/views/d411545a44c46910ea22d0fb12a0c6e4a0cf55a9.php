@@ -5,12 +5,12 @@
     <!-- Overlay content -->
     <div class="overlay-content">
         <a href="/">HOME</a>
-        <a href="/performances">THEATRE</a>
-        <a href="/works">MY WORKS</a>
-        <a href="/photos">PHOTOGRAPHY</a>
-        <a href="/cv">CURRICULUM VITAE</a>
-        <a href="/agendafragments">DIARY FRAGMENTS</a>
-        <a href="https://www.instagram.com/ambernynkeanna/">INSTAGRAM</a>
+        <a href="/theatre">THEATRE</a>
+        <a href="/myworks">MY WORKS</a>
+        <a href="/photography">PHOTOGRAPHY</a>
+        <a href="/curriculumvitae">CURRICULUM VITAE</a>
+        <a href="/diaryfragments">DIARY FRAGMENTS</a>
+        <a href="https://www.instagram.com/ambernynkeanna/">FANCY FIGMENTS</a>
         <a href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a>
     </div>
 </div>

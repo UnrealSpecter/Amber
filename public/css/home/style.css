@@ -99,6 +99,14 @@
     align-items: center;
 }
 
+.dhevak-link-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .dhevak-link {
     color: white;
     font-size: 2em;

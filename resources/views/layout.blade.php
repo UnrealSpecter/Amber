@@ -7,6 +7,8 @@
 
         <title>Amber Rozema</title>
 
+        <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('/images/Home/flower_icon.png')}}" />
+
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/animate.css') }}">

@@ -53,7 +53,7 @@ body{
 	margin:0;
 }
 
-.flipbook-viewport .shadow{
+/*.flipbook-viewport .shadow{
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
@@ -64,4 +64,4 @@ body{
 	-o-box-shadow:0 0 20px #ccc;
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
-}
+}*/
