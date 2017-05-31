@@ -19,7 +19,7 @@
 		<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 main-description sub-container invisible">
 		   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 performance-description-block">
 			   <div class="youtube-button-container col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				   <h1 style="color: white; font-family: Georgia; font-size: 3em; text-align: center;">{{$performance->name}}</h1>
+				   <h1 class="performance-name-main">{{$performance->name}}</h1>
 			   </div>
 			   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 description">{{ $performance->description }}</div>
 			   @if($performance->video)
@@ -31,7 +31,7 @@
 	   </div>
 
 	   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 short-description sub-container">
-		   <h1 style="font-family: Georgia; font-size: 3em; color: white; font-weight: 300; text-align: center;">{{$performance->name}}</h1>
+		   <h1 class="performance-name-short">{{$performance->name}}</h1>
 		   <h1 class="performance-date">{{date('d F Y', strtotime($performance->performanceDate))}}</h2>
 		   <div class="meer-info-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
    				<a class="meer-button">MORE INFO</a>
@@ -40,7 +40,7 @@
 
 	   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 sub-container">
 		   <div class="shadow"></div>
-		   <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}" alt="{{$performance->name}}" style="height: 750px; width: 100%;">
+		   <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}" alt="{{$performance->name}}" style="height: 100%; width: 100%;">
 	   </div>
 
 	   @if($performance->video)
@@ -54,12 +54,12 @@
 
 	</div>
 	@else
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 performance animated fadeInDown" style="margin-bottom: 5px; height: 600px;">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 performance animated fadeInDown" style="margin-bottom: 5px;">
 
 		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 main-description sub-container invisible">
 		   <div class="col-lg-12 performance-description-block">
 			   <div class="youtube-button-container col-lg-12">
-				   <h1 style="color: white; font-family: Georgia; font-size: 5em; text-align: center;" class="">{{$performance->name}}</h1>
+				   <h1 class="performance-name-main">{{$performance->name}}</h1>
 			   </div>
 			   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 description">{{ $performance->description }}</div>
 			   @if($performance->video)
@@ -71,7 +71,7 @@
 	   </div>
 
 		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 short-description sub-container">
-	   		 <h1 style="text-align: center; font-family: Georgia; font-size: 5em; color: white; font-weight: 300;">{{$performance->name}}</h1>
+	   		 <h1 class="performance-name-short">{{$performance->name}}</h1>
 	   		 <h1 class="performance-date">{{date('d F Y', strtotime($performance->performanceDate))}}</h2>
 	   		 <div class="meer-info-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	   			  <a class="meer-button">MORE INFO</a>
@@ -80,7 +80,7 @@
 
 	   	 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 sub-container">
 	   		 <div class="shadow"></div>
-	   		 <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}" alt="{{$performance->name}}" style="height: 600px; width: 100%;">
+	   		 <img class="img-responsive" src="/uploads/{{$performance->mediaItem}}" alt="{{$performance->name}}" style="height: 100%; width: 100%;">
 	   	 </div>
 
 	   	 @if($performance->video)

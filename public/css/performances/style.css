@@ -1,58 +1,127 @@
 /* large desktops and up ----------- */
 @media screen and (min-width: 1200px) {
+    .performance {
+        height: 600px;
+        margin: 50px 0 50px 0;
+    }
     .next-performance {
         height: 750px;
     }
-    .performances {
-        height: 600px;
-        margin: 50px 0 50px 0;
+
+    .youtube-button, .meer-button, .terug-button {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    .performance-main > .text-center {
+        font-size: 4em;
+    }
+    .performance-date {
+        font-size: 3em;
+    }
+    .description {
+        font-size: 2em;
+    }
+    .performance-name-main {
+        font-size: 4em;
+    }
+    .performance-name-short {
+        font-size: 3em;
     }
 }
 
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .performance {
+        height: 400px;
+        margin: 50px 0 50px 0;
+    }
     .next-performance {
         height: 550px;
     }
-    .performances {
-        height: 400px;
-        margin: 50px 0 50px 0;
+    .youtube-button, .meer-button, .terug-button {
+        font-size: 1.25em;
+        padding: 15px;
+    }
+    .performance-main > .text-center {
+        font-size: 3.5em;
+    }
+    .performance-date {
+        font-size: 2.5em;
+    }
+    .description {
+        font-size: 1.5em;
+    }
+    .performance-name-main {
+        font-size: 3.5em;
+    }
+    .performance-name-short {
+        font-size: 2.5em;
     }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+    .performance {
+        height: 300px;
+        margin: 50px 0 50px 0;
+    }
     .next-performance {
         height: 450px;
     }
-    .performances {
-        height: 300px;
-        margin: 50px 0 50px 0;
+    .youtube-button, .meer-button, .terug-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .performance-main > .text-center {
+        font-size: 2.5em;
+    }
+    .performance-date {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1.25em;
+    }
+    .performance-name-main {
+        font-size: 2.5em;
+    }
+    .performance-name-short {
+        font-size: 2em;
     }
 }
 
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
+    .performance {
+        height: 200px;
+        margin: 50px 0 50px 0;
+    }
     .next-performance {
         height: 350px;
     }
-    .performances {
-        height: 200px;
-        margin: 50px 0 50px 0;
+    .youtube-button, .meer-button, .terug-button {
+        font-size: 0.75em;
+        padding: 5px;
+    }
+    .performance-main > .text-center {
+        font-size: 2em;
+    }
+    .performance-date {
+        font-size: 1.5em;
+    }
+    .description {
+        font-size: 1em;
+    }
+    .performance-name-main {
+        font-size: 2.5em;
+    }
+    .performance-name-short {
+        font-size: 1.5em;
     }
 }
 
 body {
     background: url('../../images/Performance/performance_background.jpg');
     background-size: cover;
-}
-
-.next-performance {
-
-}
-
-.performances {
-
 }
 
 .sub-container {
@@ -78,7 +147,17 @@ body {
     z-index: 10;
 }
 
+.performance-name-main {
+    color: white;
+    font-family: Georgia;
+    text-align: center;
+}
 
+.performance-name-short {
+    color: white;
+    font-family: Georgia;
+    text-align: center;
+}
 
 .performance-description-container {
     position: relative;
@@ -109,13 +188,11 @@ body {
 }
 
 .performance-main > .text-center {
-    font-size: 5em;
     color: white;
 }
 
 .performance-date {
     color: white;
-    font-size: 3em;
     font-family: Georgia;
 }
 
@@ -161,7 +238,6 @@ body {
     position: relative;
     padding: 20px;
     font-family: Georgia;
-    font-size: 2vw;
     color: white;
     overflow: hidden;
     display: flex;
@@ -193,8 +269,6 @@ body {
     border: solid black 1px;
     color: white;
     font-family: courier;
-    font-size: 1.5em;
-    padding: 20px;
     cursor: pointer;
 }
 
