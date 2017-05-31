@@ -8,6 +8,7 @@ use App\Models\Work;
 
 use Intervention\Image\ImageManagerStatic as Image;
 use \Input as Input;
+use File;
 
 class WorkController extends Controller
 {
@@ -60,9 +61,14 @@ class WorkController extends Controller
     }
 
     public function destroy($id){
-        $work = Work::findOrFail($id);
-        $work->delete();
-        return redirect()->route('works.index');
+        $work = Work::find($id);
+
+        $residualImage = public_path('uploads/works/' . $work->imagepath);
+        $residualThumbImage = public_path('uploads/works/thumbs/' . $work->imagepath);
+
+        if($work->delete() && File::delete($residualImage) && File::delete($residualThumbImage)){
+            return redirect()->route('works.index');
+        }
     }
 
 }

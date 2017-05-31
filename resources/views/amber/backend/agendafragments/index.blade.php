@@ -18,7 +18,18 @@
 		<div class="container">
 			<div class="flipbook">
 				@foreach($agendafragments as $agendafragment)
-					<div style="background-image:url('/uploads/agendafragments/{{$agendafragment->imagepath}}')"></div>
+					<div style="background-image:url('/uploads/agendafragments/{{$agendafragment->imagepath}}')">
+						<a href="{{Request::url()}}/{{$agendafragment->id}}/edit" class="btn btn-default btn-lg" style="float: left;">
+							<span class="glyphicon glyphicon-pencil"></span> Edit
+						</a>
+						<form method="POST" action="{{URL::to('/Amber/agendafragments')}}/{{$agendafragment->id}}" enctype="multipart/form-data">
+				        	<input type="hidden" name="_method" value="DELETE">
+				        	<input type="hidden" name="_token" value="{{csrf_token()}}">
+				        	<button type="submit" class="btn btn-default btn-lg">
+				        		<span class="glyphicon glyphicon-remove"></span> Delete
+				        	</button>
+				        </form>
+					</div>
 				@endforeach
 				<!-- <div style="background-image:url(https://pbs.twimg.com/media/CQyQbkiUcAEhoQl.jpg)"></div>
 				<div style="background-image:url(http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large)"></div>

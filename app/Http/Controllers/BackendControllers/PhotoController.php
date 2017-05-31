@@ -7,11 +7,12 @@ use DB;
 use App\Models\Fotoblog;
 
 use \Input as Input;
+use File;
 
 class PhotoController extends Controller
 {
     public function index(){
-        $fotoblogs = DB::table('fotogblogs')->orderBy('created_at', 'desc')->get();
+        $fotoblogs = DB::table('fotoblogs')->orderBy('created_at', 'desc')->get();
         return view('amber.backend.photos.index', compact($fotoblogs, 'fotoblogs'));
     }
 
@@ -54,9 +55,11 @@ class PhotoController extends Controller
 
     public function destroy($id){
         $fotoblog = Fotoblog::find($id);
-        if($fotoblog->delete()){
+        $residualImage = public_path('/uploads/') . $fotoblog->image;
+        if($fotoblog->delete() && File::delete($residualImage)){
             return redirect()->route('photos.index');
         }
+
     }
 
 }

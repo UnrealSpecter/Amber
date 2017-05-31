@@ -6,6 +6,12 @@
     .social-media > div > p {
         font-size: 1.75vw;
     }
+    .amber-info, .david-bowie-quote {
+        font-size: 2em;
+    }
+    .david-bowie-reference {
+        font-size: 1.75em;
+    }
 }
 
 /* tablets/desktops and up ----------- */
@@ -15,6 +21,12 @@
     }
     .social-media > div > p {
         font-size: 5vw;
+    }
+    .amber-info, .david-bowie-quote {
+        font-size: 1.8em;
+    }
+    .david-bowie-reference {
+        font-size: 1.55em;
     }
 }
 
@@ -26,6 +38,12 @@
     }
     .social-media > div > p {
         font-size: 5vw;
+    }
+    .amber-info, .david-bowie-quote {
+        font-size: 1.6em;
+    }
+    .david-bowie-reference {
+        font-size: 1.35em;
     }
 }
 
@@ -40,6 +58,12 @@
     .social-media > div > p {
         font-size: 5vw;
     }
+    .amber-info, .david-bowie-quote {
+        font-size: 1.15em;
+    }
+    .david-bowie-reference {
+        font-size: 0.9em;
+    }
 }
 
 
@@ -47,11 +71,42 @@
     background-color: black;
 }
 
+.breath {
+    margin-top: 75px;
+    /*margin-bottom: 75px;*/
+}
+
+.amber-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia;
+    color: white;
+
+}
+
+.david-bowie-quote {
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia;
+    color: white;
+}
+
+.david-bowie-reference {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia;
+    color: white;
+}
+
 .social-media {
     background-color: black;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 .social-media-icons {

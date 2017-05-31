@@ -89,6 +89,8 @@
 /* body background image */
 body {
     background: url('../../images/Photo/photo_background.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 
