@@ -8,7 +8,7 @@
 	@include('amber.resources.frontend-menu')
 	<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="row">
-			<img class="animated fadeInUp" style="max-height: 100%; width: 100%;" src="{{ URL::asset('/images/Home/header.jpg') }}" alt="amber-titelblad">
+			<img class="animated fadeInUp" style="max-height: 100%; width: 100%;" src="{{ URL::asset('/images/Home/header_amber_rozema.jpg') }}" alt="amber-titelblad">
 		</div>
 		<div class="row breath">
 			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1  amber-info">
