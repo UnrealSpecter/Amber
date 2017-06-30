@@ -21,8 +21,8 @@
         <li><a href="/photography">PHOTOGRAPHY</a></li>
         <li><a href="/curriculumvitae">CURRICULUM VITAE</a></li>
         <li><a href="/diaryfragments">DIARY FRAGMENTS</a></li>
-        <li><a href="http://www.amberrozema.tumblr.com">FANCY FIGMENTS</a></li>
-        <li><a href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a></li>
+        <li><a target="_blank" href="http://www.amberrozema.tumblr.com">FANCY FIGMENTS</a></li>
+        <li><a target="_blank" href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

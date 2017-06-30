@@ -10,7 +10,7 @@
         <a href="/photography">PHOTOGRAPHY</a>
         <a href="/curriculumvitae">CURRICULUM VITAE</a>
         <a href="/diaryfragments">DIARY FRAGMENTS</a>
-        <a href="https://www.instagram.com/ambernynkeanna/">FANCY FIGMENTS</a>
-        <a href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a>
+        <a target="_blank" href="https://www.instagram.com/ambernynkeanna/">FANCY FIGMENTS</a>
+        <a target="_blank" href="https://www.etsy.com/nl/people/amberrozema ">SHOP</a>
     </div>
 </div>

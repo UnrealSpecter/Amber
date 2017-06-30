@@ -121,7 +121,6 @@
 
 body {
     background: url('../../images/Performance/performance_background.jpg');
-    background-size: cover;
 }
 
 .sub-container {
@@ -209,7 +208,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.15;
     position: absolute;
     top: 0;
     left: 0;

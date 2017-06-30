@@ -87,11 +87,11 @@
     }
 }
 /* body background image */
-body {
+/*body {
     background: url('../../images/Photo/photo_background.jpeg');
     background-position: center;
     background-size: cover;
-}
+}*/
 
 
 /* main wrapper around everything */
