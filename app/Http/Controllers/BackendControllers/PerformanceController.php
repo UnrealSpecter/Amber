@@ -79,7 +79,7 @@ class PerformanceController extends Controller
             }
 
         }
-        
+
         $performance->save();
 
         return redirect()->route('performances.index');

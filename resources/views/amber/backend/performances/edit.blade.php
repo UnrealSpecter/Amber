@@ -22,6 +22,16 @@
 	          <label class="control-label" for="date">Datum van optreden</label>
 	          <input class="form-control" id="date" name="performanceDate" placeholder="YYYY-MM-DD" value="{{ $performance->performanceDate }}" type="text"/>
 
+              <label class="control-label" for="show_date">Datum laten zien?</label>
+              @if($performance->show_date == 'yes')
+              <input type="radio" name="show_date" value="yes" checked>Ja
+              <input type="radio" name="show_date" value="no">Nee<br>
+              @else
+              <input type="radio" name="show_date" value="yes">Ja
+              <input type="radio" name="show_date" value="no" checked>Nee<br>
+              @endif
+
+
 			  <input type="hidden" name="_method" value="PUT">
 			  <input type="hidden" name="_token" value="{{csrf_token()}}">
 			</div>

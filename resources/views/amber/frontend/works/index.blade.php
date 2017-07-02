@@ -21,10 +21,12 @@
 							<div>
 								<h1 class="text-center">{{$work->title}}</h1>
 							</div>
+							@if($work->dimensions)
 							<hr width="50%">
 							<div>
 								<h3 class="text-center">{{$work->dimensions}}</h3>
 							</div>
+							@endif
 							<div>
 								<p style='font-style: italic; top: 10px; left: 10px; position: absolute;8'>{{$work->workDate}}</p>
 							</div>

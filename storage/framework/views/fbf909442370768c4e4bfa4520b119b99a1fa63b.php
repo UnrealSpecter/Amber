@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('amber.resources.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php echo $__env->make('amber.resources.performances-submenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -20,6 +21,16 @@
 
 	          <label class="control-label" for="date">Datum van optreden</label>
 	          <input class="form-control" id="date" name="performanceDate" placeholder="YYYY-MM-DD" value="<?php echo e($performance->performanceDate); ?>" type="text"/>
+
+              <label class="control-label" for="show_date">Datum laten zien?</label>
+              <?php if($performance->show_date == 'yes'): ?>
+              <input type="radio" name="show_date" value="yes" checked>Ja
+              <input type="radio" name="show_date" value="no">Nee<br>
+              <?php else: ?>
+              <input type="radio" name="show_date" value="yes">Ja
+              <input type="radio" name="show_date" value="no" checked>Nee<br>
+              <?php endif; ?>
+
 
 			  <input type="hidden" name="_method" value="PUT">
 			  <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">

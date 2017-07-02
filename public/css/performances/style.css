@@ -19,10 +19,11 @@
         font-size: 3em;
     }
     .description {
-        font-size: 2em;
+        font-size: 1.6em;
+        padding: 20px;
     }
     .performance-name-main {
-        font-size: 4em;
+        font-size: 3em;
     }
     .performance-name-short {
         font-size: 3em;
@@ -49,10 +50,11 @@
         font-size: 2.5em;
     }
     .description {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        padding: 15px;
     }
     .performance-name-main {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
     .performance-name-short {
         font-size: 2.5em;
@@ -79,10 +81,11 @@
         font-size: 2em;
     }
     .description {
-        font-size: 1.25em;
+        font-size: 1em;
+        padding: 15px;
     }
     .performance-name-main {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
     .performance-name-short {
         font-size: 2em;
@@ -92,7 +95,7 @@
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
     .performance {
-        height: 200px;
+        height: 300px;
         margin: 50px 0 50px 0;
     }
     .next-performance {
@@ -109,10 +112,12 @@
         font-size: 1.5em;
     }
     .description {
-        font-size: 1em;
+        font-size: 0.8em;
+        padding: 15px;
+        overflow:scroll;
     }
     .performance-name-main {
-        font-size: 2.5em;
+        font-size: 1.3em;
     }
     .performance-name-short {
         font-size: 1.5em;
@@ -128,6 +133,7 @@ body {
     left: 0;
     position: absolute;
     height: 100%;
+    padding: 0;
 }
 
 .short-description {
@@ -136,6 +142,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    padding: 0;
 }
 
 .main-description {
@@ -144,12 +151,14 @@ body {
 
 .video-container {
     z-index: 10;
+    padding: 0;
 }
 
 .performance-name-main {
     color: white;
     font-family: Georgia;
     text-align: center;
+    margin: 5px 0px 10px 0px;
 }
 
 .performance-name-short {
@@ -192,6 +201,7 @@ body {
 
 .performance-date {
     color: white;
+    margin: 0;
     font-family: Georgia;
 }
 
@@ -230,12 +240,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding: 0;
 }
 
 .description {
     height: 100%;
     position: relative;
-    padding: 20px;
     font-family: Georgia;
     color: white;
     overflow: hidden;
@@ -246,10 +256,12 @@ body {
 
 .meer-info-container {
     position: absolute;
-    bottom: 0;
-    justify-content: center;
+    top: 0;
+    justify-content: flex-end;
     display: flex;
-    padding: 1%;
+    padding: 0;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
 }
 
 .youtube-button-container {

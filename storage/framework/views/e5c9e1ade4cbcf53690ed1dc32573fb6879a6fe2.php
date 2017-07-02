@@ -16,7 +16,9 @@
             <input type="file" name='mediaItem' id='file'>
             <label class="control-label" for="date">Datum van optreden</label>
             <input class="form-control" id="date" name="performanceDate" placeholder="YYYY-MM-DD" type="text"/>
-
+            <label class="control-label" for="show_date">Datum laten zien?</label>
+            <input type="radio" name="show_date" value="yes" checked>Ja
+            <input type="radio" name="show_date" value="no">Nee<br>
             <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
           </div>
           <button type="submit" class="btn btn-lg">Save</button>

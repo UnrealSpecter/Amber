@@ -32,7 +32,9 @@
 					<img src="/uploads/works/thumbs/<?php echo e($work->imagepath); ?>"/>
 					<div class="caption animated fadeInUp">
 						<div><?php echo e($work->title); ?></div>
+						<?php if($work->dimensions): ?>
 						<div><?php echo e($work->dimensions); ?></div>
+						<?php endif; ?>
 						<div><?php echo e($work->workDate); ?></div>
 					</div>
 				</a>

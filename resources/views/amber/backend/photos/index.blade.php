@@ -24,13 +24,13 @@
     				@endif
     			</div>
 
-    			<div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-3 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 fotoblog-date">
+    			<!-- <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-3 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 fotoblog-date">
     				<div class="info-background"></div>
     				<div class="date-info-wrapper">
     					<h1>{{date('d F', strtotime($fotoblog->created_at))}}</h1>
     					<h3 style="font-weight: bold;">{{date('Y', strtotime($fotoblog->created_at))}}</h3>
     				</div>
-    			</div>
+    			</div> -->
     		</div>
 
     		<div class="img-wrapper">

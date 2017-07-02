@@ -21,10 +21,12 @@
 							<div>
 								<h1 class="text-center"><?php echo e($work->title); ?></h1>
 							</div>
+							<?php if($work->dimensions): ?>
 							<hr width="50%">
 							<div>
 								<h3 class="text-center"><?php echo e($work->dimensions); ?></h3>
 							</div>
+							<?php endif; ?>
 							<div>
 								<p style='font-style: italic; top: 10px; left: 10px; position: absolute;8'><?php echo e($work->workDate); ?></p>
 							</div>

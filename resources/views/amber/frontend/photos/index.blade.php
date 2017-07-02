@@ -2,6 +2,8 @@
 	<link rel="stylesheet" href="{{ URL::asset('css/photos/style.css')}}"/>
 @endsection
 @section('js')
+	<script src="{{ URL::asset('js/global/hammer.js') }}"></script>
+		<script src="{{ URL::asset('js/global/hammer-time.js') }}"></script>
     <script src="{{ URL::asset('plugins/viewportchecker/js/viewport.js') }}"></script>
     <script src="{{ URL::asset('plugins/viewportchecker/js/viewportchecker.js') }}"></script>
 	<script src="{{ URL::asset('js/photos/script.js') }}"></script>
@@ -13,7 +15,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 photo-wrapper">
 
 		<div class="info-wrapper">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fotoblog-tekst hidden" style="height: 50%;">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 fotoblog-tekst hidden" style="height: 50%;">
 				<div class="info-background"></div>
 				<h1>{{$fotoblog->title}}</h1>
 				@if(!empty($fotoblog->description))
@@ -32,7 +34,7 @@
 		</div>
 
 		<div class="img-wrapper">
-			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
+			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" id="photo-{{ $fotoblog->id }}" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
 		</div>
 
 	</div>

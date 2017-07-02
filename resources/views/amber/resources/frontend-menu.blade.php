@@ -8,8 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand animated fadeInRight" style="font-family: courier; " href="/">
-          <h1 style="padding: 0; margin: 0;">Amber Rozema</h1>
+      <a class="navbar-brand animated fadeInRight" style="font-family: courier;" href="/">
+          <h1>Amber Rozema</h1>
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->

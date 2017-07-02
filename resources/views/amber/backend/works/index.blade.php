@@ -32,7 +32,9 @@
 					<img src="/uploads/works/thumbs/{{$work->imagepath}}"/>
 					<div class="caption animated fadeInUp">
 						<div>{{$work->title}}</div>
+						@if($work->dimensions)
 						<div>{{$work->dimensions}}</div>
+						@endif
 						<div>{{$work->workDate}}</div>
 					</div>
 				</a>

@@ -11,10 +11,10 @@
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-default .navbar-nav>li>a {
-        font-size: 1.2vw;
+        font-size: 1.15vw;
     }
     .navbar-brand > h1 {
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 }
 
@@ -52,9 +52,19 @@
     align-items: center;
 }
 
+.navbar-brand > h1 {
+    margin: 0;
+}
+
 ul {
     height: 100px;
     line-height: 100px;
+}
+
+.navbar-right {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 10px;
 }
 
 .navbar-default .navbar-nav>li>a {

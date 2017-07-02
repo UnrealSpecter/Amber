@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
         <title>Amber Rozema</title>
 
-        <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('/images/Home/flower_icon.png')}}" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('/images/Home/eendje_2.png')}}" />
 
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/app.css') }}">
@@ -23,26 +23,6 @@
         <script type="text/javascript" src="{{ URL::asset('js/global/mobile-menu.js')}}"></script>
         @yield('js')
 
-        <!-- Bootstrap Date-Picker Plugin -->
-        <!-- TODO do not load datepicker on every fucking page, you retard. -->
-<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
-
-        <script>
-            $(document).ready(function(){
-                //datepicker code
-                // var date_input=$('input[name="performanceDate"]'); //our date input has the name "date"
-                // var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-                // var options={
-                //     format: 'yyyy-mm-dd',
-                //     container: container,
-                //     todayHighlight: true,
-                //     autoclose: true,
-                // };
-                // date_input.datepicker(options);
-            });
-
-        </script>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
