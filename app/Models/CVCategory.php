@@ -12,6 +12,6 @@ class CVCategory extends Model
     protected $fillable = ['categoryName'];
 
     public function entries(){
-        return $this->hasMany('App\Models\CVEntry' , 'category_id');
+        return $this->hasMany('App\Models\CVEntry', 'category_id');
     }
 }
