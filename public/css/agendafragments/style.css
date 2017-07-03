@@ -1,5 +1,5 @@
 body {
-    background: url('../../images/Agenda/agenda_background.jpeg');
+    background-color: black !important;
 }
 
 .container {
@@ -58,6 +58,7 @@ body.hide-overflow {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding-bottom: 2.5%;
 }
 
 .book .page {
