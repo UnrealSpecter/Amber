@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="msapplication-tap-highlight" content="no" />
 
         <title>Amber Rozema</title>
 
@@ -18,6 +19,7 @@
         <?php echo $__env->yieldContent('css'); ?>
 
         <!-- jQuery -->
+        <script type="text/javascript" src="<?php echo e(URL::asset('js/global/analytics.js')); ?>"></script>
         <script type="text/javascript" src="<?php echo e(URL::asset('js/global/jquery-3.1.1.min.js')); ?>"></script>
         <!-- <script type="text/javascript" src="<?php echo e(URL::asset('js/global/modernizr.2.5.3.min.js')); ?>"></script> -->
         <script type="text/javascript" src="<?php echo e(URL::asset('js/global/mobile-menu.js')); ?>"></script>

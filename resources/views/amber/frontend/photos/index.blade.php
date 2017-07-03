@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="img-wrapper">
-			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" id="photo-{{ $fotoblog->id }}" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
+			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" id="photo-{{ $fotoblog->id }}" data-tapped="0" src="/uploads/{{$fotoblog->image}}" alt="{{$fotoblog->title}}">
 		</div>
 
 	</div>

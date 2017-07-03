@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="img-wrapper">
-			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" id="photo-<?php echo e($fotoblog->id); ?>" src="/uploads/<?php echo e($fotoblog->image); ?>" alt="<?php echo e($fotoblog->title); ?>">
+			<img class="col-lg-8 col-md-9 col-sm-12 col-xs-12 center-block fotoblog img-responsive" id="photo-<?php echo e($fotoblog->id); ?>" data-tapped="0" src="/uploads/<?php echo e($fotoblog->image); ?>" alt="<?php echo e($fotoblog->title); ?>">
 		</div>
 
 	</div>
