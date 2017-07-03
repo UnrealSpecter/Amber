@@ -8,7 +8,7 @@
 @extends('layout')
 @section('content')
 @include('amber.resources.frontend-menu')
-<div class="agenda-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: flex; justify-content: center; height: 100vh;">
+<div class="agenda-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: flex; justify-content: center; height: 85vh;">
 
 	<div class="t">
 	    <div class="tc rel">
