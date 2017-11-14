@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-    // photoblog viewport cheker
-    $('.fotoblog').addClass("hideme").viewportChecker({
-        classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-        offset: 300
-    });
+    // // photoblog viewport cheker
+    // $('.fotoblog').addClass("hideme").viewportChecker({
+    //     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+    //     offset: 300
+    // });
 
     $('.img-wrapper > img').hover(
         function(){
@@ -52,5 +52,21 @@ $(document).ready(function(){
             });
         });
     }
+
+    //loop categories and store them in the array for use
+    var fotoblogs = [];
+    $('.photo-wrapper').each(function(index, object) {
+        fotoblogs.push(object);
+    });
+    //set start index
+    var index = 0;
+    //setInterval half a second and loop through categories and removeClass
+    var interval = setInterval(function() {
+        $(fotoblogs[index]).removeClass('hidden');
+        index++;
+        if(index == fotoblogs.length){
+            clearInterval(interval);
+        }
+    }, 250);
 
 });

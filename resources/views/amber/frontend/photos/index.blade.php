@@ -4,15 +4,15 @@
 @section('js')
 	<script src="{{ URL::asset('js/global/hammer.js') }}"></script>
 		<script src="{{ URL::asset('js/global/hammer-time.js') }}"></script>
-    <script src="{{ URL::asset('plugins/viewportchecker/js/viewport.js') }}"></script>
-    <script src="{{ URL::asset('plugins/viewportchecker/js/viewportchecker.js') }}"></script>
+    <!-- <script src="{{ URL::asset('plugins/viewportchecker/js/viewport.js') }}"></script>
+    <script src="{{ URL::asset('plugins/viewportchecker/js/viewportchecker.js') }}"></script> -->
 	<script src="{{ URL::asset('js/photos/script.js') }}"></script>
 @endsection
 @extends('layout')
 @section('content')
 @include('amber.resources.frontend-menu')
 	@foreach ($fotoblogs as $fotoblog)
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 photo-wrapper">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 photo-wrapper hidden">
 
 		<div class="info-wrapper">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 fotoblog-tekst hidden" style="height: 50%;">
