@@ -63,6 +63,7 @@ $(document).ready(function(){
     //setInterval half a second and loop through categories and removeClass
     var interval = setInterval(function() {
         $(fotoblogs[index]).removeClass('hidden');
+        $(fotoblogs[index]).addClass('animated fadeIn');
         index++;
         if(index == fotoblogs.length){
             clearInterval(interval);
